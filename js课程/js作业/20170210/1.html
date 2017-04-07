@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var sum=0;
+        for (var x=1;x<=10;x++){
+            console.log(x+"的阶乘是"+jiecheng(x));
+           sum+=jiecheng(x);
+
+        }console.log("阶乘和是"+sum);
+
+        function jiecheng(a){
+            var ji=1;
+            for(var b=1;b<=a;b++){
+                ji*=b;
+            }
+         return ji;
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

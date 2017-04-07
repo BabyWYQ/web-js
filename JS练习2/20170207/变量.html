@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //定义一个变量
+        var a;
+        //赋值：=为赋值符号。把=右边的值赋给左边的变量
+        a=100;
+        //输出变量
+        console.log(a); //100
+        //没有定义的语句会引发错误
+        console.log(b);
+
+        //合法的变量名、
+        var a;
+        var A;
+        var b333;
+        var _abc;
+        var $3545e;
+        var ____;
+        var _;
+        var $;
+
+        //非法的变量
+        var 123a ;//不能以数字开头
+        var 12_a;
+        var  abc@qwe;
+        var var ;//关键字
+        var class;// 保留字
+        var abc￥;
+
+        //定义不赋初值 值是undefined；
+        var m;
+        console.log(m);//undefined;
+
+        //不写var默认是全局变量
+        abc=123;
+        console.log(abc);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

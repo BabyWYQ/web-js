@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //标准的IIFE
+        (function fun(){
+            console.log("哈哈");
+        })();
+        //、、、、、、、、
+        (function fun(a){
+            console.log(a);
+        })("哈哈");
+        //设计一个参数，这个函数接受三个参数，比如：sum（4，7,9）//返回
+        //方法一 标准写法
+        function sum(a,b,c) {
+            var max = a >= b ? a : b;
+            return max + c;
+        }
+        console.log(sum(4,7,9));
+        //方法二 奇淫技巧
+        function sum (a,b,c) {
+            return (function (x, y) {
+                    return x >= y ? x : y;
+                })(a, b) + c;
+        }
+        console.log(sum(4,7,9));
+
+        //(function (x, y) {
+        return x >= y ? x : y;
+        })(a, b) //就是标准的IIFE；
+    </script>
+</head>
+<body>
+
+</body>
+</html>

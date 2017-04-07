@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+//        var arr=[12,33,45,56,64];
+//        console.log(arr.sort());
+//        console.log(arr.sort(function (a,b) {
+//            return a-b;//
+//        }))
+        //冒泡排序法
+        var arr=[64,24,4,867,46,34];
+        console.log(arr);
+        for (var j=0;j<arr.length-1;j++){
+            //j=0 i=5  5-0
+            //j=1 i=4 5-1
+            //j=2 i=3 5-2
+            for (var i=0;i<arr.length-1-i;i++){
+                //如果前面的数字大于后面的数字，交换数字的位置
+                if(arr[i]>arr[i+1]){
+                    //交换数字的位置
+                    var kong=arr[i];
+                    arr[i]=arr[i+1];
+                    arr[i+1]=kong;
+                }
+            }
+        }
+        console.log(arr);
+
+
+        //简单得交换两个各变量的值
+        var a=10;
+        var b=20;
+        console.log(a,b);
+        var temp;
+        temp=a;
+        a=b;
+        b=temp;
+        console.log(a,b);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

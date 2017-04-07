@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet"  type ="text/css" href="../css/zhuce.css">
+</head>
+<body>
+   <div id="box">
+       <form id="regFrom" >
+            <table class="regTable">
+                <tr class="logo">
+                    <td>
+                        <a href="../index.html">
+                            <img src="../img/logo_icon.png" alt="">
+                        </a>
+                    </td>
+                </tr>
+                <tr class="call_number">
+                    <td>
+                        <span class="phone_Number">
+                            <span>手机号</span>
+                            <input type="text" placeholder="请输入手机号">
+                        </span>
+                    </td>
+                </tr>
+                <tr class="auth_code">
+                    <td>
+                        <span class="auth_Number">
+                            <span>验证码</span>
+                            <input type="text" placeholder="请输入验证码">
+                            <img src="../img/number.png" alt="">
+                            <a href="#">看不清，换一张</a>
+                        </span>
+                    </td>
+                </tr>
+                <tr class="placeholder">
+                    <td>
+                        <span class="placeholder_Number">
+                            <span>创建密码</span>
+                            <input type="text" placeholder="6-20位字符组成，区分大小写">
+                        </span>
+                        <span>
+                            <div class="case"></div>
+                            <div class="strngth">
+                                <span class="passLeft">弱</span>
+                                <span>中</span>
+                                <span class="passRight">强</span>
+                            </div>
+                        </span>
+                    </td>
+                </tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+            </table>
+       </form>
+   </div>
+</body>
+</html>

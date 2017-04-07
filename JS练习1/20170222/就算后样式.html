@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 200px;
+            background-color: red;
+            padding:10px 20px 30px ;
+            border:10px solid green;
+        }
+    </style>
+</head>
+<body>
+<div> </div>
+<script>
+    var oDiv=document.getElementsByTagName("div")[0];
+    console.log(window.getComputedStyle(oDiv).getPropertyValue("width"));
+    console.log(window.getComputedStyle(oDiv).getPropertyValue("padding-left"));
+    //引号里的内容不是驼峰
+    console.log(window.getComputedStyle(oDiv).getPropertyValue("paddingLeft"));
+
+//    alert("hi");
+//    window.alert("hi");
+
+ //简写getPropertyValue：
+//    console.log(getComputedStyle(oDiv)["padding-left"]);
+//    console.log(getComputedStyle(oDiv)["paddingLeft"]);//方括号表示时可以用驼峰!
+    //以上写的Ie6,7,8全部视为错误！
+    //=====================================
+    //在IE可以显示出来的写法
+//   alert(oDiv.currentStyle.width);//20
+//   alert(oDiv.currentStyle.height);//auto 属性里边没有宽
+//   alert(oDiv.currentStyle.paddingLeft);//20 只能用驼峰
+//   //在Ie只能识用驼峰
+//    alert(oDiv.currentStyle["paddingLeft"]);//有方括号的前没有点
+
+</script>
+</body>
+</html>

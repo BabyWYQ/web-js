@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //在字符串中拿到我们想要拿到的东西 ，拿到所有的数字；
+        //-324.5345
+        var  str="今年是2017年我涨工资了，工资变成2000元了，房贷还有-4.5元，我有张了1岁，现在3岁了";
+        var reg=/-?\d+\.?\d*/g;
+        var array=str.match(reg);
+        console.log(array);
+        //寻找连续相同字符串
+        var str="aaaabbbbbbbbbbbbbbaaaaafffffeeeeeertyyyyyyy";
+        var  reg =/(\w)\1+/;
+        var array=str.match(reg);
+        console.log(array);
+        var  maxlength ="0";
+        var maxchar="";
+        for (var i =0;i<array.length;i++){
+            if (array[i].length>maxlength ){
+                maxlength =array[i].length ;
+                maxchar=array [i];
+            }
+        }
+        console.log(maxchar);
+    </script>
+</head>
+
+<body>
+
+</body>
+</html>

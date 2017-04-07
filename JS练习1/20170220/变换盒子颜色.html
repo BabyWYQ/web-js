@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<div id ="box"></div>
+<script>
+    box=document.getElementById("box");
+    /*
+    var state="blue";
+    box.onclick=function(){
+        if(state=="blue"){
+            state="red";
+        }else{
+            state="blue";
+        }
+        this.style.backgroundColor=state;
+    }*/
+    //方法2
+    var state=0;
+    box.onclick=function(){
+            if(state==0){
+                state=1;
+            }else{
+                state=0;
+            }
+            this.style.backgroundColor=state ?"blue":"red";
+        }
+</script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script src="js/underscore.js"></script>
+<script>
+//    _.each([1,2,3], alert);
+//    _.forEach([1,2,3], alert);
+//    _.each([1,2,3], function(item){
+//        console.log(item);
+//    })
+    function a(item){
+        console.log(item);
+    }
+//    _.each([1,2,3], a);
+
+//    _.each({one: 1, two:2, three:3}, a);
+
+    //鸭子类型
+//    var duck = {
+//        duckSinging: function(){
+//            console.log("嘎嘎嘎");
+//        }
+//    };
+//    var chicken = {
+//        duckSinging: function(){
+//            console.log("嘎嘎嘎");
+//        }
+//    };
+//    var choir = []; //合唱团
+//    var joinChoir = function(animal) {
+//        if (animal && typeof animal.duckSinging === 'function') {
+//            choir.push(animal);
+//            console.log("恭喜加入合唱团");
+//            console.log("合唱团已有成员数量：" + choir.length);
+//        }
+//    };
+//    for (var i = 0; i < 999; i++) {
+//        joinChoir(duck);
+//    }
+//    joinChoir(chicken);
+//    for (var i = 0; i < choir.length; i++) {
+//        var obj = choir[i];
+//        obj.duckSinging();
+//    }
+
+    //***********************
+    var arr = _.map([1,2,3], function(num){ return num * 3;});
+    console.log(arr);
+    var arr = _.map({one: 1, two: 2, three:3}, function(num, key){
+        return key + num * 3
+    });
+    console.log(arr);
+
+    //**************************
+    var sum = _.reduce([1,2,3], function(memo,num){
+        console.log(memo, num);
+       return memo + num;
+    }, 0);
+    console.log(sum);//6
+
+    //***********************
+    var list = [[0, 1], [2,3], [4,5]];
+    var flat = _.reduce(list, function(memo, arr){
+        return memo.concat(arr);
+    }, []);
+    console.log(flat);
+    var flat = _.reduceRight(list, function(memo, arr){
+        return memo.concat(arr);
+    }, []);
+    console.log(flat);
+
+    //************************8
+    var even = _.find([1,2,3,4,5,6], function(num){
+        console.log(num);
+        return num % 2 == 0;
+    });
+    console.log(even);
+
+    //***************
+    var evens = _.filter([1,2,3,4,5,6], function(num){
+        return num % 2 == 0;
+    });
+    console.log(evens);
+    var x = {a:1,b:2,c:3,d:4,e:5,f:6};
+    var a = _.filter(x, function(value, index){
+        console.log(value, index);
+        return value % 2 == 0;
+    });
+    console.log(a);
+
+    //**********************
+    var list = [
+        {name:"程辰", year: 17},
+        {name:"付荣", year: 17},
+        {name:"杜老师", year: 18}
+    ];
+    console.log(_.where(list, {year:17}));
+
+    //******************************
+    //有对象
+    var list = [
+        {x:1,y:2},
+        {x:1,z:3}
+    ];
+    console.log(_.findWhere(list, {x:1}));
+
+    //非对象的情况
+    var list = [{x:1,y:2}, {z:3}];
+    console.log(_.findWhere(list, null));
+
+    //list非数组且predicate没值的情况
+    console.log(_.findWhere('123'));
+
+    //如果匹配不到则会返回什么
+    console.log(_.findWhere(list, {x:1, z:4}));
+
+    var str = "亚倩";
+    console.log(str[0]);
+    console.log(str[1]);
+
+    //*****************************
+    var num = _.reject([1,2,3,4,5,6], function(num){
+        return num % 2 == 0;
+    });
+    console.log(num);
+
+    //***************8
+    console.log(_.every([true, 1, null, 'yes'], function(num){
+        console.log(num);
+        return typeof num == "string";
+    }));
+    console.log(_.every([1,2,"起哇"]));
+    console.log(_.every([1,2,"起哇"], function(num){
+        return typeof num == "number";
+    }));
+    console.log(_.every([1,2,Infinity, NaN], function(num){
+        return typeof num == "number";
+    }));
+
+    //*********************
+    console.log(_.some([null, 0, 'yes', false]));
+    console.log(_.some([null, 0, 'yes', false], function(num){
+//        return num == "付荣";
+        return num == "yes";
+    }));
+
+    //***************
+    console.log(_.contains([1,2,3], 3));
+    console.log(_.contains([1,2,3], "3"));
+    console.log(_.contains([[1,2], [3,4]], [1,2]));
+
+
+
+</script>
+</body>
+</html>

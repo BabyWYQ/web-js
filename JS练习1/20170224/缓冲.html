@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .one{
+            width: 60px;
+            height: 60px;
+            background:orange;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+        .two{
+            width: 60px;
+            height: 60px;
+            background:red;
+            position: absolute;
+            top: 300px;
+            left: 100px;
+        }.three{
+            width: 60px;
+            height: 60px;
+            background:royalblue;
+            position: absolute;
+            top: 500px;
+            left: 100px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="one"></div>
+<div class="two"></div>
+<div class="three"></div>
+<script>
+    var oDiv=document.getElementsByTagName("div");
+
+    //t表示当前的帧数
+    //b表示起始位置 ，
+    //c是表示变化量
+    //d是表示总帧数
+
+    //加速
+    function xixi(t,b,c,d){
+       return c * ( t /= d) * t + b;
+     }
+     //匀速
+    function linear(t , b , c , d){
+       return c * t / d + b;
+    }
+
+//    function haha(t,b,c,d) {
+//        if((t/=d)<(1/2.75)){
+//            return c * (7.5625 * t * t) + b;
+//        }else if(t < (2/2.75)){
+//            return c*(7.5625 *(t -= (1.5/2.75))* t + .75)+b;
+//        }else if (t < (2.5/2.75)) {
+//            return c * (7.5625 * (t-=(2.25/2.75))* t + .9375)+b;
+//        }else {
+//            return c * (7.5625 * (t-=(2.625/2.75))* t + .984375)+b;
+//        }
+//    }
+
+    //弹跳
+    function  haha(t,b,c,d) {
+        if((t/=d)<(1/2.75)){
+            return c*(7.5625*t*t)+b;
+        }else if(t<(2/2.75)){
+            return c*(7.5625*(t-=(1.5/2.75))*t+.75)+b;
+        }else if(t<(2.5/2.75)){
+            return c*(7.5625*(t-=(2.25/2.75))*t+.9375)+b;
+        }else{
+            return c*(7.5625*(t-=(2.625/2.75))*t+.984375)+b;
+        }
+    }
+  //实验
+    var frameNumber=0;
+    var timer=setInterval(function(){
+        frameNumber++;
+        if (frameNumber==150) {
+            clearInterval(timer);
+        }
+        oDiv[1].style.left=haha(frameNumber,100,600,150)+"px";
+        oDiv[0].style.left=linear(frameNumber,100,600,150)+"px";
+        oDiv[2].style.left=xixi(frameNumber,100,600,150)+"px";
+
+    },20);
+</script>
+</body>
+</html>

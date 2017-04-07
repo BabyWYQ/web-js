@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<script>
+    var arr = [1,2,3,4,5,6,7,8,9,11,12,13,14,15];
+    console.log(sample(arr, 6));
+
+    function sample(arr, num) {
+        var result = [];
+        for (var i = 0; i < num; i++) {
+            while(true) {//循环去找到一个合适的随机数，找到后退出循环
+                var index = random(0, arr.length);
+                //如果在数组当中找不到当前的这个数，则index可用
+                if (result.indexOf(arr[index]) == -1) {
+                    break;
+                }
+            }
+            result.push(arr[index]);
+        }
+        return result;
+    }
+
+    function random(start, end) {
+        return start + parseInt(Math.random() * (end - start));
+    }
+</script>
+</body>
+</html>

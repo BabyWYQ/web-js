@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+
+        function a(x){
+            var sum=0;
+            for(var j=1;j<x;j++){
+                if (x%j==0){
+                    sum+=j;
+                    console.log(j);
+                }
+                console.log(sum);
+            }
+
+            return sum;
+        }
+        for(var c=1;c<=3000;c++){
+            for(var d=1;d<=3000;d++){
+                if (a(c)==d&&a(d)==c&&c<d){
+                    console.log(c);
+                    console.log(d);
+                }
+            }
+        }
+//..................
+        function  rev(a){//48
+            var b=0;
+            //b=8 //b=84 //b=841
+            while (a){
+                console.log("a="+a,"b="=b);
+                //相当于十位的数+个位的数
+                b=b*10+a%10;//b自己乘以10然后加上a
+                //a不变的初除以10 ，舍个位
+                a=parseInt(a/10);//a 自己变短一位
+            }
+            return b;
+        }
+        console.log(rev(230));
+
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

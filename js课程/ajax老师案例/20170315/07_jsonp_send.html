@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="button" value="按我" id="btn">
+<script>
+    function fun(data) {
+        console.log(data);
+    }
+    window.fun = function(data){
+        console.log(data);
+    }
+</script>
+<script>
+    var oBtn = document.getElementById("btn");
+    oBtn.onclick = function(){
+        //创建一个标签
+        var scriptObj = document.createElement("script");
+        //追加这个script节点
+        document.body.appendChild(scriptObj);
+        //一个script标签没有src属性，将什么都不做
+        //一个script标签如果一旦设置src属性，那么将立即发出HTTP请求.
+        scriptObj.src = "jsonp.ttt";
+    }
+</script>
+</body>
+</html>

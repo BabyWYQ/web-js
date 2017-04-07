@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var str="www.ucai.cn";
+        console.log(str.replace(/ucai\.cn/,"ucai.com"));//字符串里的“.”是不能识别的，用转移字符，“\.”
+        console.log(str.replace(/ucai\.cn/,function(){
+            return "ucai.com";
+        }));
+
+        var name ="aaa  bbb ccc";
+        var uw=name.replace(/\b\w+\b/g,function(word){
+            console.log(word);
+            return word.substring(0,1).toUpperCase()+word.substring(1);
+        });
+        console.log(uw);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

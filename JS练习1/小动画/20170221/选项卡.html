@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .tab{
+            margin:100px auto;
+            width: 310px;
+            border-top:2px solid #206f96;
+        }
+        .tab .hd{}
+        .tab .hd span{
+            width: 102px;;
+            float: left;
+            line-height: 29px;
+            border-left:1px solid #cfcfcf;
+            border-bottom: 1px solid #cfcfcf;
+            background: #efefef;
+            font-size:14px;
+            text-align: center;
+        }
+        .tab .hd  span.last{
+            border-right:1px solid #cfcfcf;
+        }
+        .tab .hd span.current{
+            border-bottom-color:white;
+            background-color:white;
+            font-weight:bold;
+        }
+        .tab .hd span a{
+            color: #252525;
+            text-decoration: none;
+        }
+        .tab .hd span a:hover{
+            color:#a00;
+            text-decoration: underline;
+        }
+        .tab .bd {
+            padding-top:15px;
+            padding-left:8px;
+        }
+        .tab .bd  div{
+            display:none ;
+        }
+
+        .tab .bd div.current{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="tab">
+    <div id="tab_hd" class="hd">
+        <span class="current"><a href="">新闻</a></span>
+        <span><a href="">图片</a></span>
+        <span class="last"><a href="">军事</a></span>
+    </div>
+    <div id="tab_bd" class="bd">
+        <div class="current">1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</div>
+
+<script>
+    //取得元素
+
+    var oTab_hd=document.getElementById("tab_hd").getElementsByTagName("span");
+    var oTab_bd=document.getElementById("tab_bd").getElementsByTagName("div");
+    var  index=0;
+    for (var i = 0; i <oTab_hd.length; i++) {
+        (function (i) {
+            oTab_hd[i].onmouseover = function () {
+                index = i;
+                changePic();
+            }
+        })(i);
+    }
+    function changePic() {
+        for (var i = 0; i < oTab_bd.length; i++) {
+            oTab_bd[i].className = "";
+//            oTab_bd[i].className = "";
+        }
+        oTab_bd[index].className = "current";
+//        oTab_bd[j].className="current";
+        oTab_hd[0].className = "";
+        oTab_hd[1].className = "";
+        oTab_hd[2].className = "last";
+        oTab_hd[index].className += " current";
+    }
+
+</script>
+</body>
+</html>
+
+
+

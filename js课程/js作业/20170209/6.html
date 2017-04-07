@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var a,b,c;
+        var sum;
+        for (var i=100;i<999;i++){
+            a=parseInt(i%10);
+            b=parseInt((i%100)/10);
+            c=parseInt(i/100);
+            sum=Math.pow(a,3)+Math.pow(b,3)+Math.pow(c,3);
+            if (sum == i){
+                console.log(i);
+            }
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

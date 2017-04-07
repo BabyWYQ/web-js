@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        div{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 100px;
+            left:138px;
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" value="按我就往左移动" id="btn1"/>
+    <input type="button" value="按我就往右移动" id="btn2"/>
+
+    <div id="box"></div>
+    <script type="text/javascript">
+        //得到元素
+        var oDiv = document.getElementById("box");
+        var oBtn1 = document.getElementById("btn1");
+        var oBtn2 = document.getElementById("btn2");
+
+        //信号量，这个值的初始值，要根据事实情况来设置
+        var left = 138;
+
+        //绑定事件
+        oBtn1.onclick = function(){
+            left-=10;
+            oDiv.style.left = left + "px";
+        }
+
+        //绑定事件
+        oBtn2.onclick = function(){
+            left+=10;
+            oDiv.style.left = left + "px";
+        }
+    </script>
+
+</body>
+</html>

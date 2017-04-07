@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function rightchange(m,n){
+            var arr=[];
+            for(var i=0;i<arr.length;i++){
+                var arr2=[];
+
+            }
+        }
+        ///////////////////////////////////////////////////////正解：
+
+        function rightMove(char,n){
+
+            // 把n转一下，看n相对于char的length来说实际移动几位
+            n = n % char.length;
+
+            // 如果移动0位，就是char本身
+            if(n==0)return char;
+
+            return char.substr(-n) + char.substring(0,char.length-n);
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

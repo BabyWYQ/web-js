@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function  Person(name,age,sex,gf){
+        this.name=name;
+        this.age=age;
+        this.sex=sex;
+        this.gf=gf;
+        this.sayHello=function () {
+            console.log("我是"+this.name+",今年"+this.age+",性别是"+this.sex+"，我的女盆友是"+this.gf);
+        }
+    }
+    var hanliming = new Person("韩黎明",21,"男","王亚倩");
+    hanliming.sayHello();
+
+
+
+
+//    function  Dog(name, type,age,sex){
+//        this.name=name;
+//        this.type=type,
+//        this.age=age;
+//        this.sex=sex;
+//        this.sayHello=function () {
+//            console.log("我是"+this.name+",今年"+this.age+",性别是"+this.sex+)
+//            "，我的女盆友是"+this.gf
+//        }
+//    }
+    
+
+</script>
+</body>
+</html>

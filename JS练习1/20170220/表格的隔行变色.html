@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table,tr{
+            border:1px solid black;
+            border-collapse:collapse;
+        }
+        td{
+            width:120px;
+            height:22px;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            var oTrs=document.getElementsByTagName("tr");
+            for(var i=0;i<oTrs.length;i+=2){
+                oTrs[i].style.backgroundColor="red";
+            }
+        }
+
+    </script>
+</head>
+<body>
+<table>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+
+</table>
+</body>
+</html>

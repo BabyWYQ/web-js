@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //苹果个数 x  区间 0 - parseInt（200/3）
+        //鸭梨个数 y 区间 0 - parseInt（200/2）
+        //苹果个数 z  区间 0 - 100
+        //x+Y+z=100
+        //3x+2y+z=200
+        for(var x=0;x<=66;x++){
+            for (var y=0;y<=100;y++){
+                for (var z=0;z<=100;z++){
+                    if (x+y+z==100&&3*x+2*y+z==200){
+                        console.log(x,y,z);
+                    }
+                }
+            }
+        }
+        //优化
+        var count=0;
+        for (var x=0;x<=50;x++){
+            for (var y=0;y<=100-x;y++){
+                count ++;
+                var z=100-x-y;
+                if (3*x+2*y+z==200){
+                    console.log(x,y,z);
+                }
+            }
+        }
+        console.log("一共计算了"+count+"次")
+    </script>
+</head>
+<body>
+
+</body>
+</html>

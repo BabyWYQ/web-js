@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        for (var i=100;i<999;i++){
+            var shiwei =parseInt(i/10)%10;
+            var gewei =i%10;
+            var baiwei =parseInt(i/100);
+            if (jiecheng(gewei)+jiecheng(shiwei)+jiecheng(baiwei)==i){
+                console.log(i);
+            }
+        }
+        function jiecheng(a){
+            var ji=1;
+            for(var b=a;b>=1;b--){
+                ji*=b;
+            }
+            return ji;
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

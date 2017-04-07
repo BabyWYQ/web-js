@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var obj={
+        a:1,
+        b:2,
+        c:3
+    };
+    obj.__proto_ ={
+        d:4
+    };
+    //hasOwnProperty不在原型链里找
+    console.log(obj.hasOwnProperty("a"));
+    console.log(obj.hasOwnProperty("b"));
+    console.log(obj.hasOwnProperty("c"));
+    console.log(obj.hasOwnProperty("d"));
+
+//    for(var k in obj){
+//        if(obj.hasOwnProperty(k)){
+//            console.log(k);
+//        }
+//        obj.hasOwnProperty(k)&& console.log(k);
+//    }
+</script>
+</body>
+</html>

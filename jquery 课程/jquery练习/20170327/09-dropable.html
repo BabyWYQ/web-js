@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles/jquery-ui.min.css">
+    <style>
+        .box1 {
+            width: 100px;
+            height: 100px;
+            border:2px solid #F00;
+        }
+        .box2 {
+            width: 200px;
+            height: 200px;
+            border:2px solid #F00;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box1"> </div>
+<div class="box2"> </div>
+<script src="//cdn.bootcss.com/jquery/1.12.3/jquery.js"> </script>
+<script src="js/jquery-ui.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('.box1').draggable();
+    $('.box2').droppable();
+    $('.box2').on('drop', function(event,ui){
+        console.log(event);
+        $('.box2').text('drop事件');
+    })
+});
+
+</script>
+</body>
+</html>

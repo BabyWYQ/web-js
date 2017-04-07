@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //xiaoming对象和furong对象，都有相同属性的属性名，方法名
+    //创建恰来不方便，那么怎们版?构造函数去解决
+    var liming ={
+        name:"黎明",
+        age:20,
+        sex:"男",
+        sayHello:function () {
+            console.log("Hello,My name is"+this .name,this.age,this .sex);
+        },
+        grow:function () {
+            this.age++;
+        }
+    };
+    liming.grow();
+    liming.grow();
+    liming.sayHello();
+</script>
+</body>
+</html>

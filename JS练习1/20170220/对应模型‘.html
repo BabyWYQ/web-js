@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            border:1px solid #c4c4c4;
+            width:85%;
+
+            overflow:hidden;
+
+
+        }
+        p{
+            width: 200px;
+            height: 200px;
+            background-color:red;
+            margin-right:20px;
+            float:left
+        }
+    </style>
+</head>
+<body>
+<div id ="box1">
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+</div>
+<div id="box2">
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+</div>
+<script>
+    var box1ps=document.getElementById("box1").getElementsByTagName("p");
+    var box2ps=document.getElementById("box2").getElementsByTagName("p");
+    // 第一种 编号
+//    for (var i = 0; i < box1ps.length; i++) {
+//        box1ps[i].index=i;
+//        box1ps[i].onclick=function () {
+//            box2ps[this.index].style.backgroundColor="yellowgreen"
+//        }
+//    }
+    //第二种
+    for (var i = 0; i < box1ps.length; i++) {
+        (function (i) {
+            box1ps[i].onclick=function () {
+                box2ps[i].style.backgroundColor="yellowgreen"
+            }
+        })(i)
+
+    }
+</script>
+</body>
+</html>

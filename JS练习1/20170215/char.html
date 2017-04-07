@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //匹配制定的字符串
+        console.log(/bb/.text('bb^acc'));
+        //匹配^a
+        var reg=/\^a/;
+        console.log(reg.test('bb^ass'));
+        //匹配\m 反斜线表示转义，不能直接匹配到\本身；
+        //var reg=/\m/ 尝试转义，
+        var reg=/\\m/;
+        console.log(reg.test('asdf\\masdsfdff'));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

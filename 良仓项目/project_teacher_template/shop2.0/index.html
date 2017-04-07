@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>11</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+<!--商品分类-->
+<ul id="goods_category" class="goods_category"></ul>
+<!--轮播图-->
+<div id="carousel" class="carousel">
+    <div id="imagesList" class="imagesList">
+        <ul>
+
+        </ul>
+    </div>
+    <!--div.btns>span*2-->
+    <div class="btns">
+        <span class="leftBtn" id="carousel_leftBtn"></span>
+        <span class="rightBtn" id="carousel_rightBtn"></span>
+    </div>
+    <!--div#circles.circles>ol>li*8-->
+    <div id="circles" class="circles">
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+</div>v
+<!--热门商品-->
+<ul id="hot_goods_ul" class="hot_goods_ul"></ul>
+<!--热门商品模板-->
+<script type="text/template" id="hot_goods_template">
+    <li>
+        <div>
+            <img width="250" height="250" src="%goods_thumb%" alt="%goods_name%" title="%goods_name%">
+            <div>%goods_name% <span>￥%price%</span></div>
+            <div class="detail">%goods_desc%</div>
+        </div>
+    </li>
+</script>
+
+<script src="libs/j1.0.js"></script>
+<script>
+    j.loadScript(['scripts/common.js', 'scripts/index.js']);
+</script>
+</body>
+</html>

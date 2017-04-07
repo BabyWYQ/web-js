@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        p{
+            float: left;
+            width: 60px;
+            height: 60px;
+            background-color: #ccc;
+            margin-right: 10px;
+        }
+        #box{
+            position: absolute;
+        }
+        .circles ol{
+            list-style: none;
+        }
+        .circles ol li{
+            float: left;
+            width: 20px;
+            height: 20px;
+            background-color: orange;
+            margin-right: 10px;
+        }
+    </style>
+
+</head>
+<body>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<div id="box">
+    <ul>
+        <li><span>哈哈</span></li>
+        <li class="haha"><span>哈哈</span></li>
+        <li class="haha"><span>哈哈</span></li>
+        <li class="haha"><span>哈哈</span></li>
+        <li><span>哈哈</span></li>
+    </ul>
+</div>
+
+<div class="circles">
+    <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+</div>
+<script src="//cdn.bootcss.com/jquery/1.12.3/jquery.js"></script>
+<script >
+   $("p").css("background","red");
+   $("#box ul li.haha span").css("background-color","red");
+   //jquery 计算后样式
+    alert($("#box").css("width"));
+    //设置样式
+    $("#box").css({
+         "width":700,
+        "height":300,
+        "opacity":0.4
+    })
+    //squery运动
+   $("#box").animate({"left":900,"width":100}, 4000, function(){
+       console.log("finish");
+   });
+   //批量添加监听，以及节点关系的能力
+   $('.circles ol li').mouseenter(function(){
+       //自己变红，自己的兄弟恢复为橙色
+       $(this).css("background-color", "red").siblings()
+           .css("background-color","orange");
+   });
+</script>
+</body>
+</html>

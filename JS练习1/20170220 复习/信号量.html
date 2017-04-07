@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            background-color: greenyellow;
+            top:100px;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" id="btn1" value="左移">
+    <input type="button" id="btn2" value="右移">
+    <div id="box" style="left:138px;"></div>
+    <script>
+        var btn1=document.getElementById("btn1");
+        var btn2=document.getElementById("btn2");
+        var box=document.getElementById("box");
+        var  left=138;
+        btn1.onclick=function(){
+            left-=10;
+            box.style.left=left+"px";
+        };
+        btn2.onclick=function(){
+            left+=10;
+            box.style.left=left+"px";
+        };
+    </script>
+</body>
+</html>

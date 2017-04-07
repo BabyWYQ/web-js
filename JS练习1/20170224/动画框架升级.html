@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>、
+    <style>
+        div{
+            width: 120px;
+            height: 120px;
+            background-color: red;
+            position: absolute;
+            left: 100px;
+            top:100px;
+            color:blue;
+            font-weight:500;
+            text-align: center;
+            line-height: 100px;
+            border:10px solid yellow;
+        }
+    </style>
+</head>
+<body>
+<div>滚动吧，方块君</div>
+<script src="animate3.0.js"></script>
+<script>
+    var oDiv=document.getElementsByTagName("div")[0];
+    m();
+//    oDiv.onmouseover=function () {
+//        m =null;
+//    };
+//    oDiv.onmouseout=function () {
+//        if(m==null){
+//            m=m();
+//        }
+//    };
+    function m () {
+        animate(oDiv,{"left":1000},1400,function () {
+            animate(this,{"top":400},1400,function () {
+                animate(this,{"left":100},1400,function () {
+                    animate(this,{"top":100},1400,function () {
+                        m();
+                    })
+                })
+            })
+        })
+    };
+</script>
+</body>
+</html>

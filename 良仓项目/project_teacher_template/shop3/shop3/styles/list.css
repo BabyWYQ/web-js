@@ -1,0 +1,26 @@
+/*热门商品*/
+.goods_container {
+    height:100%;
+}
+.goods_ul {
+    overflow: hidden;
+}
+.goods_ul li {
+    width: 250px;
+    height: 380px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-top: 10px;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.goods_ul li img {
+    border-radius: 50%;
+}
+.goods_ul li span {
+    color: orangered;
+}
+.goods_ul li div .detail {
+    color: #666666;
+}

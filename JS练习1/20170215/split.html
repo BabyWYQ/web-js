@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var  str="a     b     c";
+        console.log(str.split(""));//使用空字符串分割，会分割出所有的字符
+        console.log(str.split(" "));//使用空格字符串，只有第一个空格被当成分割符，后面的会当成普通字符串, 所以我们需要使用正则表达式的方式去进行分割
+        console.log(str.split("  "));
+
+        console.log(str.split(/\s+/));//正则不写引号；
+
+    </script>
+</head>
+<body>
+</body>
+</html>

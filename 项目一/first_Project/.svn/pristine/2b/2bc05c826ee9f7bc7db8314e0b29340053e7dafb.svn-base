@@ -1,0 +1,142 @@
+﻿/*注册页面css样式*//**/
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background:#999999;
+}
+#box{
+    width:100%;
+    margin: 0 auto;
+}
+#regFrom{
+    width:100%;
+    display:inline-block;
+    color:#ccc;
+}
+.regTable{
+    width:565px;
+    margin:0 auto;
+    border-spacing:10px;
+    position:relative;
+    padding-bottom:40px;
+    background:green;
+    color:#ffffff;
+}
+.logo td{
+    height:160px;
+}
+.logo a img{
+    position:relative;
+    left:-33px;
+    margin:0 0 -17px 130px;
+}
+
+.call_number  {
+    height: 50px;
+}
+.phone_Number span{
+    width:50px;
+    line-height:50px;
+    font-size:14px;
+    color:#fff;
+    opacity:0.9;
+    padding-right:20px;
+}
+.phone_Number input{
+    width:270px;
+    height:50px;
+    line-height:50px;
+    padding-left:20px;
+    color: #ffffff;
+    opacity:0.99;
+    font-size:14px;
+    display:inline-block;
+    border:0;
+    outline:none;
+    background:#cbcbcb;
+}
+.auth_code  {
+    height: 50px;
+}
+.auth_Number span{
+    width:50px;
+    line-height:50px;
+    font-size:14px;
+    color:#fff;
+    opacity:0.9;
+    padding-right:20px;
+}
+.auth_Number input{
+    width:195px;
+    height:50px;
+    line-height:50px;
+    padding-left:20px;
+    color:#FFF;
+    opacity:0.99;
+    font-size:14px;
+    display:inline-block;
+    border:0;
+    outline:none;
+    background:#cbcbcb;
+}
+.auth_Number  img{
+    position:relative;
+    top:10px;
+    right:0;
+}
+.auth_Number a{
+    text-decoration: none;
+    color:#ffffff;
+    font-size:12px;
+}
+.placeholder  {
+    height: 50px;
+}
+.placeholder_Number span{
+    width:50px;
+    line-height:50px;
+    font-size:14px;
+    color:#fff;
+    opacity:0.9;
+    padding-right: 6px;
+}
+.placeholder_Number input{
+    width:270px;
+    height:50px;
+    line-height:50px;
+    padding-left:20px;
+    color:#FFF;
+    opacity:0.99;
+    font-size:14px;
+    display:inline-block;
+    border:0;
+    outline:none;
+    background:#cbcbcb;
+}
+.case{
+    width: 127px;
+    height: 12px;
+    border:1px solid #000;
+}
+.strngth{
+    width: 127px;
+    height: 16px;
+    color:#4c4c4c;
+}
+.strngth span{
+    font-size:12px;
+    display:inline-block;
+    width:41px;
+    text-align: center;
+}
+.passLeft{
+    position: relative;
+    left:-13px;
+}
+.passRight{
+    position: relative;
+    right:-15px;
+}
+

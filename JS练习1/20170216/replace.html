@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        //replace就是替换
+        //换一个 找到第一个匹配的，就不往后再匹配了
+        var str="付荣是女的，付荣是我的同学";
+        console.log(str);
+        str=str.replace(/付荣/g,function (a,b,c) {//a b a是形式参数
+            //a 是匹配上的字符串
+            //b是匹配上的字符串的下标
+            //c是源字符串
+            console.log(a,b,c);
+            return "梦婷";
+        })
+        console.log(str);
+        //===============================
+        var str="我每个月花2000元，挣0元";
+        console.log(str);
+        str=str.replace(/\d元/g,function(a){
+            console.log(a);
+            return "$"+Math.round(parseInt(a)/6*100)/100;
+        })
+        //===========================
+        //replace 分组，直接在代替字符串中使用$1 $2 来表示不活的东西
+        var str="Koby Bryant";
+        str=str.replace(/(\w+)\s(\w+)/,"$2 $1");
+        console.log(str);
+        //===========================
+        var str="Koby Bryant";
+        str=str.replace(/(\w+)\s(\w+)/,function(match,$1,$2,index){
+            console.log("match="+match);
+            console.log("match.type="+typeof (match));
+            console.log("$1="+$1);
+            console.log("$2="+$2);
+            console.log("index="+index);
+            console.log("str="+str);
+        })
+    </script>
+</head>
+<body>
+
+</body>
+</html>

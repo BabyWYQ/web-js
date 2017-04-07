@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //js 中没有函数的重载 也就是说函数的名字一样，即使形式参数不一样，
+        //也会被视为 同一个函数 后写的会覆盖现写的
+//        function fun(a,b,c){
+//            console.log("hehe");
+//        }
+//        function fun(a,b){
+//            console.log("haha");
+//        }
+//        fun(1,2,3);//输出哈a
+        //=========================;
+        //arguments参数，是每个函数天生就有的，调用的时候会填充里面的内容
+//        function fun(a,b){
+//            console.log(arguments);
+//            console.log(arguments[3])//34
+//        }
+//        fun=(45,627,457,34,23);
+        //==============================
+//        function sum(a,b){
+//            //如果实际参数的长度为1，说白了就是只传进来一个参数；
+//            switch (arguments.length){
+//               case 1:
+//                    return ++a;
+//                    break;
+//               case 2:
+//                    return a+b;
+//                    break;
+//            }
+//        }
+//        console.log(sum(10));
+//        console.log(sum(10,20));
+        //设计一个无线参数的函数，去求和
+        //第一种
+//        function sum(a,b){
+//            var sum =0;
+//            for (var i=0;i<arguments.length;i++){
+//                sum +=arguments[i];
+//
+//            }
+//            return sum;
+//        }
+//        sum(1,2,3,4,5);
+        //第二种
+//        function sum(a){
+//            var sum =0;
+//            for (var i=0;i<arguments.length;i++){
+//                sum +=arguments[i];
+//
+//            }
+//            return sum;
+//        }
+//        console.log(sum(1,2,3,4,5));
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

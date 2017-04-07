@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var a=prompt("请输入汉字");
+        var reg =/^[\u4e00-\u9fa5]{2,4}$/;
+        if(reg.test(a)){
+            console.log("是");
+        }else{
+            console.log("不是");
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

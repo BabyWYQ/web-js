@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="img/10.jpg"id="tutu" alt="">
+<script>
+    var oImg =document.getElementById("tutu");
+    oImg.setAttribute("src","img/11.jpg");
+
+</script>
+<div liming="黎明" id ="box"></div>
+<script>
+    var oLiming =document.getElementById("box");
+    //自定义属性，不是w3c 的属性。都不能用点语法
+    console.log(oLiming.liming);
+    console.log(oLiming.getAttribute("liming"));
+</script>
+</body>
+</html>

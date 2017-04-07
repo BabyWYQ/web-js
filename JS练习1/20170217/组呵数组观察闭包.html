@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var  arr=[];
+        arr.push(function (){
+            console.log("Hi");
+        });
+        arr.push(function (){
+            console.log("hello");
+        });
+        arr.push(function (){
+            console.log("good");
+        });
+        arr.push(function (a,b){
+            console.log(a+b);
+        });
+        console.log(arr);
+        //arr [2]就是其中的函数，加上（）就能运行；
+        //匿名函数需要()来调用
+        arr[2]();
+        arr[3](5,6);
+        //
+        var arr=[];
+        for(var i=0;i<10;i++){
+            (function(m){
+                arr[m]=function (){
+                    console.log(m);
+                }
+            })(i);
+        }
+        arr[3]();
+        arr[6]();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

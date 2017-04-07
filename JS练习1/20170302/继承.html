@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Person Student
+    //Student 继承 Person ，Student 能够拥有所有People的属性和方法；
+     function Person(name,sex,age) {
+         this.name=name;
+         this.age=age;
+         this.sex=sex;
+     }
+    Person.prototype={
+         sayHello:function () {
+             console.log("Hello.大家好，我是"+this.name);
+         },
+        eat:function () {
+            console.log("I am eatting ");
+        }
+    };
+
+    function Student(){}
+     Student.property=new Person("韩黎明",21,"男");
+    var s=new Student();
+    console.log(s.name);
+    console.log(s.sex);
+    console.log(s.age);
+    console.log(s.sayHello);
+</script>
+</body>
+</html>

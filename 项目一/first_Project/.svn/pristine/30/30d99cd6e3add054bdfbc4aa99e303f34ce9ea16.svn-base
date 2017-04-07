@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../css/denglu.css">
+</head>
+<body>
+    <div id="box">
+        <form action="../php/loginFrom.php" id="loginForm">
+            <table class="loginTable" >
+                <tr class="logo">
+                     <td>
+                         <a href="../html/index.html">
+                             <img src="../img/nlicon.png" alt="">
+                         </a>
+                     </td>
+                </tr>
+                <tr  class="call_number">
+                    <td >
+                        <div>
+                            <input type="text"  placeholder="请输入手机号"/>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="verify_number">
+                    <td >
+                        <div class="auth_code">
+                            <input type="text"  placeholder="请输入验证码"/>
+                            <div>获取验证码</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="zd_login">
+                    <td>
+                        <input type="checkbox" value="自动登录">
+                        <span>自动登录</span>
+                    </td>
+                </tr>
+                <tr class="login">
+                    <td>
+                        <input type="submit" value="登录" >
+                    </td>
+                </tr>
+                <tr class="more">
+                    <td>
+                        <a href="#" class="a">更多登录方式 ></a>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

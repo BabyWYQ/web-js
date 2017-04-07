@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .form{
+            width: 300px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            position: relative;
+        }
+        .tips{
+            position: absolute;
+            top: 150px;
+            left: 27px;
+            background: yellow;
+            border: 1px solid orange;
+            width: 180px;
+            padding: 6px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px black;
+            font-size: 12px;
+            line-height: 25px;
+
+        }
+        .tips{
+            display:none;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="form">
+        <p>email: <input type="text"  /></p>
+        <p>密码: <input type="password" /></p>
+        <p>确认密码: <input type="password" /></p>
+        <p>
+            <input type="checkbox" id="cb"/>
+            <label for="cb" id="label">十天内免登陆</label>
+        </p>
+        <div class="tips" id="div">
+            请注意安全啊请注意安全啊请注意安全啊请注意安全啊请注意安全啊请注意安全啊请注意安全啊请注意安全啊
+        </div>
+    </div>
+
+<script type="text/javascript">
+    var  oLabel= document.getElementById("label");
+    var oDiv=document.getElementById("div");
+    oLabel.onmouseover=function(){
+        oDiv.style.display="block";
+    }
+    oLabel.onmouseout=function(){
+        oDiv.style.display="none";
+    }
+</script>
+
+</body>
+</html>

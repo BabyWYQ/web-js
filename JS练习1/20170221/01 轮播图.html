@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    .carousel{
+        width:590px;
+        height:340px;
+        margin:50px auto;
+        position: relative;
+    }
+    .carousel ul{
+        list-style: none;
+    }
+    .carousel ul li{
+        display: none;
+    }
+    .carousel ul li.current {
+        display:block;
+    }
+    .carousel span{
+        position:absolute;
+        width:55px;
+        height:55px;
+        top:130px;
+        cursor:pointer;
+    }
+    .carousel .leftBtn{
+        left: 10px;
+        background:url(img/left.png);
+    }
+    .carousel .rightBtn{
+        right: 10px;
+        background:url(img/right.png);
+    }
+    .carousel .circles{
+        position:absolute;
+        bottom:20px;
+        width:250px;
+        height: 17px;
+        left:50%;
+        margin-left:-90px;
+    }
+    .carousel .circles ol{
+        list-style: none;
+    }
+    .carousel .circles ol li{
+        float:left;
+        width: 17px;
+        height: 17px;
+        margin-right:13px;
+        background:red;
+        border-radius:50%;
+        cursor: pointer;
+    }
+    /*.carousel .circles ol li.current{*/
+        /*background-color:gray;*/
+    /*}*/
+</style>
+<body>
+ <!--div#carousel.carousel>div#imagesList.imagesList>ul>li*8>a>img-->
+ <!--div.btns>span*2-->
+ <!--div#circles.circles>ol>li*8-->
+ <div id="carousel" class="carousel">
+     <div id="imagesList" class="imagesList">
+         <ul>
+             <li class="current"><a href="" ><img src="img/1.jpg" alt=""></a></li>
+             <li><a href=""><img src="img/2.jpg" alt=""></a></li>
+             <li><a href=""><img src="img/3.jpg" alt=""></a></li>
+             <li><a href=""><img src="img/4.jpg" alt=""></a></li>
+             <li><a href=""><img src="img/5.jpg" alt=""></a></li>
+             <li><a href=""><img src="img/6.jpg" alt=""></a></li>
+             <li><a href=""><img src="img/7.jpg" alt=""></a></li>
+             <li><a href=""><img src="img/8.jpg" alt=""></a></li>
+         </ul>
+     </div>
+     <div class="btns">
+         <span class="leftBtn" id="carousel_leftBtn"></span>
+         <span class="rightBtn" id="carousel_rightBtn"></span>
+     </div>
+     <div id="circles" class="circles">
+         <ol>
+             <li  class="current"></li>
+             <li></li>
+             <li></li>
+             <li></li>
+             <li></li>
+             <li></li>
+             <li></li>
+             <li></li>
+         </ol>
+     </div>
+ </div>
+
+ <script>
+     //1.得到所有的元素 （）每一个带有图片的li元素 左右箭头
+//     var oCarousel=docunment.getElementById("oCarousel");
+     var imagesList=document.getElementById("imagesList").getElementsByTagName("li");
+     var leftBtn=document.getElementById("carousel_leftBtn");
+     var rightBtn=document.getElementById("carousel_rightBtn");
+     var circleslist=document.getElementById("circles").getElementsByTagName("li");
+   //2.信号量
+     var imgIndex=0;
+     //3.1 右箭头监听
+     rightBtn.onclick=function(){
+         imgIndex ++;
+         if (imgIndex>7) {
+             imgIndex = 0;
+         }
+         changePic();
+     };
+     //3.2 左箭头监听
+     leftBtn.onclick=function(){
+         imgIndex--;
+         if (imgIndex <0 ) {
+             imgIndex = 7;
+         }
+         changePic();
+
+     };
+     //3.3小圆点监听
+     for (var i = 0; i <circleslist.length; i++) {
+         (function(i){
+             circleslist[i].onmouseover=function(){
+                    imgIndex=i;
+                    changePic();
+//                    changecolorone()
+                 changecolortwo()
+             }
+         })(i)
+     }
+     //第一种
+//     function changecolorone() {
+//         for (var j = 0; j < circleslist.length; j++) {
+//             circleslist[j].style.backgroundColor = "red";
+//         }
+//
+//         circleslist[imgIndex].style.backgroundColor="gray";
+//
+//     }
+     //第二种
+     for (var i = 0; i < circles.length; i++) {
+         circles[i].idx=i;
+         circles[i].onmouseover = function () {
+             imgLiIdx = this.idx;
+             changePic();
+         };
+     }
+//     function changecolortwo(){
+//         for(var i=0;i<circleslist.length;i++) {
+//             circleslist [i].className = "";
+//         }
+//         circleslist[imgIndex].className="current";
+//
+//     }
+     //事件
+     function changePic(){
+          for(var i=0;i<imagesList.length;i++) {
+              imagesList[i].className = "";
+          }
+           imagesList[imgIndex].className="current";
+
+     }
+
+ </script>
+</body>
+</html>
+
+
+
+
+
+
+
+

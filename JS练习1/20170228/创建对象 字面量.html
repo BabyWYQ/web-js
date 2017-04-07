@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //创建对象字符量的方法，k不需要加引号
+    var obj={
+        name:"小贱人",
+        age:20,
+        sex:"女"
+    }
+    console.log(obj,obj.name,typeof obj);
+    //***********************8888
+//特殊形式的k，必须要加引号，检索属性的时候，必须用方括号
+    var obj={
+        "23#$%%^&^&!":1,
+        "SR^^D^%$^%&":2,
+        "_+%&*436":3,
+        "var":4,
+        "disalka":5
+    };
+    console.log(obj["23#$%%^&^&!"],obj["SR^^D^%$^%&"],obj["_+%&*436"],obj["var"],obj["disalka"]);
+    //***************************
+var obj={
+    name:"付荣",age:18,sex:"女","study scrose":100
+}
+//console.log(obj."study scrose"); //错误
+    console.log(obj["study score"]);//正确的
+    console.log(obj["a"+"ge"]);//正确
+    var a="sex";
+    console.log(obj[a]);//正确
+
+</script>
+</body>
+</html>

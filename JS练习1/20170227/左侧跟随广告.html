@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            height: 5000px;
+        }
+        div{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 300px;
+            background-color:gold;
+        }
+    </style>
+</head>
+<body>
+<div id="box"></div>
+<script src="animate.js"></script>
+<script>
+    var box=document.getElementById("box");
+    var A=box.offsetHeight;
+    move();
+    window.onscroll=move;
+    window.onresize=move;
+    //广告话剧中
+    function move(){
+        var B=document.documentElement.clientHeight;
+        var C=document.body.scrollTop||document.documentElement.scrollTop;//滚动条的滚动高度
+        var target=C+(B-A)/2;
+
+        box.style.top=target+"px";
+    }
+
+</script>
+</body>
+</html>

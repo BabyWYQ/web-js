@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 300px;
+            height:300px;
+            background:red;
+        }
+    </style>
+</head>
+<body>
+   <div id="div">你好韩黎明</div>
+   <script>
+       var oDiv=document.getElementById("div");
+       oDiv.onmousedown=function () {//鼠标
+           this.style.background="pink";
+       }
+       oDiv.onmouseup=function () {
+           this.style.background="yellow";
+       }
+   </script>
+</body>
+</html>

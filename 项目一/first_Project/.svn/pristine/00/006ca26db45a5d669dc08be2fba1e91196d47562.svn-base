@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商店分类</title>
+    <link rel="stylesheet" href="../css/feilei.css">
+</head>
+<body>
+<!--导航条-->
+    <!--一级导航-->
+    <div id="header_box">
+        <!--一级导航-->
+        <div class="header_top">
+            <div class="first_navigation">
+                <!--logo-->
+                <a href="#" class="a"></a>
+                <!--右边列表-->
+                <ul class="nav">
+                    <li class="login_reg">
+                        <a href="../html/denglu.html" class="login">登录</a>
+                        <a href="../html/zhuce.html" class="reg">注册</a>
+                    </li>
+                    <li class="line"></li>
+                    <li class="car_shopping">
+                        <a href="#">购物车</a>
+                        <div class="car_up">
+                            <div><a href="#">你的购物车暂时没有商品...</a></div>
+                            <p><a href="#">快去抢购良仓商品吧</a></p>
+                        </div>
+                    </li>
+                    <li class="line"></li>
+                    <li class="new">
+                        <a href="#">消息</a>
+                        <div class="new_up">
+                            <a href="#">
+                                <span>动态<small>0</small></span>
+                            </a>
+                            <a href="#">
+                                <span>评论<small>0</small></span>
+                            </a>
+                            <a href="#">
+                                <span>私信<small>0</small></span>
+                            </a>
+                            <a href="#">
+                                <span>粉丝<small>0</small></span>
+                            </a>
+                            <a href="#">
+                                <span>喜欢<small>0</small></span>
+                            </a>
+                            <a href="#">
+                                <span>通知<small>0</small></span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="line"></li>
+                    <li class="add"><a>添加良品</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--二级导航-->
+        <div class="nav_Box">
+            <ul class="nav_list">
+                <li class="homepage"><a href="#" >首页</a></li>
+                <li class="go_Shopping">
+                    <a href="../html/shangdian.html">商店</a>
+                    <div class="shopping_list">
+                        <div class="Big_list" >
+                            <p class="home_Furnishing">
+                                <img src="../img/23687.png" alt="">
+                                <a href="#">家居</a>
+                            </p>
+                            <p>
+                                <img src="../img/23685.png" alt="">
+                                <a href="#">家具</a>
+                            </p>
+                            <p>
+                                <img src="../img/23686.png" alt="">
+                                <a href="#">文具</a>
+                            </p>
+                            <p>
+                                <img src="../img/23683.png" alt="">
+                                <a href="#">数码</a>
+                            </p>
+                            <p>
+                                <img src="../img/23682.png" alt="">
+                                <a href="#">玩乐</a>
+                            </p>
+                            <p>
+                                <img src="../img/23684.png" alt="">
+                                <a href="#">厨卫</a>
+                            </p>
+                            <p>
+                                <img src="../img/23680.png" alt="">
+                                <a href="#">美食</a>
+                            </p>
+                            <p class="home_Furnishing">
+                                <img src="../img/23679.png" alt="">
+                                <a href="#">男装</a>
+                            </p>
+                            <p>
+                                <img src="../img/23678.png" alt="">
+                                <a href="#">女装</a>
+                            </p>
+                            <p>
+                                <img src="../img/23677.png" alt="">
+                                <a href="#">童装</a>
+                            </p>
+                            <p>
+                                <img src="../img/23676.png" alt="">
+                                <a href="#">鞋包</a>
+                            </p>
+                            <p>
+                                <img src="../img/23675.png" alt="">
+                                <a href="#">配饰</a>
+                            </p>
+                            <p>
+                                <img src="../img/23681.png" alt="">
+                                <a href="#">美护</a>
+                            </p>
+                            <p>
+                                <img src="../img/23674.png" alt="">
+                                <a href="#">户外</a>
+                            </p>
+                            <p class="home_Furnishing">
+                                <img src="../img/23671.png" alt="">
+                                <a href="#">植物</a>
+                            </p>
+                            <p>
+                                <img src="../img/23668.png" alt="">
+                                <a href="#">图书</a>
+                            </p>
+                            <p>
+                                <img src="../img/23672.png" alt="">
+                                <a href="#">艺术</a>
+                            </p>
+                            <p>
+                                <img src="../img/23669.png" alt="">
+                                <a href="#">礼物</a>
+                            </p>
+                            <p>
+                                <img src="../img/23670.png" alt="">
+                                <a href="#">推荐</a>
+                            </p>
+
+                        </div>
+                        <div class="bottom">
+                            <a href="#">查看所有的品牌</a>
+                            <span>></span>
+                            <a href="#">最新到货</a>
+                            <span>></span>
+                        </div>
+                        <div class="new_Look">
+                            <img src="../img/315574.jpg" alt="">
+                            <p>新视线：&nbsp 2015年7月</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="magazine">
+                    <a href="#">杂志</a>
+                    <div class="magazine_list">
+                        <a href="#">趣物</a>
+                        <a href="#">数码</a>
+                        <a href="#">汽车</a>
+                        <a href="#">文化</a>
+                        <a href="#">时尚</a>
+                        <a href="#">美食</a>
+                        <a href="#">建筑</a>
+                        <a href="#">空间</a>
+                        <a href="#">圈子</a>
+                        <a href="#">清单</a>
+                        <a href="#">活动</a>
+                        <a href="#">视频</a>
+                    </div>
+                </li>
+                <li class="share">
+                    <a href="#">分享</a>
+                    <div class="share_list">
+                        <a href="#">男士</a>
+                        <a href="#">家居</a>
+                        <a href="#">数码</a>
+                        <a href="#">工具</a>
+                        <a href="#">玩具</a>
+                        <a href="#">美容</a>
+                        <a href="#">孩子</a>
+                        <a href="#">宠物</a>
+                        <a href="#">饮食</a>
+                        <a href="#">运动</a>
+                        <a href="#">文化</a>
+                        <a href="#">女士</a>
+                    </div>
+                </li>
+                <li class="expert" >
+                    <a href="#">达人</a>
+                    <div class="expert_list">
+
+                    </div>
+                </li>
+            </ul>
+            <div class="search">
+                <input type="text" value="search..."/>
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+<!--导航关键字-->
+   <p id="title">
+       <span class="word">良仓</span>
+       <span class="arrows">></span>
+       <span class="word">商店</span>
+       <span class="arrows">></span>
+       <span class="word">所有的商品</span>
+       <span class="arrows">></span>
+       <span class="word">女装</span>
+       <span class="arrows">></span>
+       <span class="T-shirt">T恤</span>
+   </p>
+<!--购物导航-->
+<div id="shopping">
+    <ul class="shopping_GPS">
+        <li><a href="#" class="new_product">新品</a></li>
+        <li><a href="#" >家居</a></li>
+        <li><a href="#" >家具</a></li>
+        <li><a href="#" >文具</a></li>
+        <li><a href="#" >数码</a></li>
+        <li><a href="#" >玩乐</a></li>
+        <li><a href="#" >厨卫</a></li>
+        <li><a href="#" >美食</a></li>
+        <li><a href="#" >男装</a></li>
+        <li><a href="#" >女装</a></li>
+        <li><a href="#" >童装</a></li>
+        <li><a href="#" >鞋包</a></li>
+        <li><a href="#"  >配饰</a></li>
+        <li><a href="#"  >美护</a></li>
+        <li><a href="#"  >户外</a></li>
+        <li><a href="#"  >植物</a></li>
+        <li><a href="#"  >图书</a></li>
+        <li><a href="#"  >艺术</a></li>
+        <li><a href="#"  >礼物</a></li>
+        <li><a href="#" >推荐</a></li>
+        <li><a href="#" >品牌</a></li>
+    </ul>
+    <div class="price">
+        价格筛选
+        <span></span>
+        <ul>
+            <li>
+                <a href="#" class="all">全部</a>
+                <a href="#">0-300</a>
+                <a href="#">301-1000</a>
+                <a href="#">1001-2000</a>
+                <a href="#">2001-4000</a>
+                <a href="#">4001以上</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--任其良品-->
+<div id="rqlp">
+    <ul class="shop_arrange">
+        <li class="item">
+            <div class="picture">
+                <a href="#"> <img src="../img/256856.jpg" alt=""></a>
+                <div class="block">
+                    <p class="money">￥499.00</p>
+                    <p class="title">Crasis柯莱仕M6博睿版太空银台灯</p>
+                    <p class="explain">简约时尚的创意设计，极致匠心情怀和专业级的桌面照明性能。无频闪...</p>
+                </div>
+                <div class="picture_bottom">
+                    <a href="#" class="left">
+                        <img src="../img/714.jpg" alt="">
+                        柯莱仕
+                    </a>
+                    <a href="#" class="number">409</a>
+                </div>
+            </div>
+        </li>
+        <li class="item">
+            <div class="picture">
+                <a href="#"> <img src="../img/256856.jpg" alt=""></a>
+                <div class="block">
+                    <p class="money">￥499.00</p>
+                    <p class="title">Crasis柯莱仕M6博睿版太空银台灯</p>
+                    <p class="explain">简约时尚的创意设计，极致匠心情怀和专业级的桌面照明性能。无频闪...</p>
+                </div>
+                <div class="picture_bottom">
+                    <a href="#" class="left">
+                        <img src="../img/714.jpg" alt="">
+                        柯莱仕
+                    </a>
+                    <a href="#" class="number">409</a>
+                </div>
+            </div>
+        </li>
+        <li class="item right">
+            <div class="picture">
+                <a href="#"> <img src="../img/256856.jpg" alt=""></a>
+                <div class="block">
+                    <p class="money">￥499.00</p>
+                    <p class="title">Crasis柯莱仕M6博睿版太空银台灯</p>
+                    <p class="explain">简约时尚的创意设计，极致匠心情怀和专业级的桌面照明性能。无频闪...</p>
+                </div>
+                <div class="picture_bottom">
+                    <a href="#" class="left">
+                        <img src="../img/714.jpg" alt="">
+                        柯莱仕
+                    </a>
+                    <a href="#" class="number">409</a>
+                </div>
+            </div>
+        </li>
+        <li class="item ">
+            <div class="picture">
+                <a href="#"> <img src="../img/256856.jpg" alt=""></a>
+                <div class="block">
+                    <p class="money">￥499.00</p>
+                    <p class="title">Crasis柯莱仕M6博睿版太空银台灯</p>
+                    <p class="explain">简约时尚的创意设计，极致匠心情怀和专业级的桌面照明性能。无频闪...</p>
+                </div>
+                <div class="picture_bottom">
+                    <a href="#" class="left">
+                        <img src="../img/714.jpg" alt="">
+                        柯莱仕
+                    </a>
+                    <a href="#" class="number">409</a>
+                </div>
+            </div>
+        </li>
+        <li class="item">
+            <div class="picture">
+                <a href="#"> <img src="../img/256856.jpg" alt=""></a>
+                <div class="block">
+                    <p class="money">￥499.00</p>
+                    <p class="title">Crasis柯莱仕M6博睿版太空银台灯</p>
+                    <p class="explain">简约时尚的创意设计，极致匠心情怀和专业级的桌面照明性能。无频闪...</p>
+                </div>
+                <div class="picture_bottom">
+                    <a href="#" class="left">
+                        <img src="../img/714.jpg" alt="">
+                        柯莱仕
+                    </a>
+                    <a href="#" class="number">409</a>
+                </div>
+            </div>
+        </li>
+        <li class="item right">
+            <div class="picture">
+                <a href="#"> <img src="../img/256856.jpg" alt=""></a>
+                <div class="block">
+                    <p class="money">￥499.00</p>
+                    <p class="title">Crasis柯莱仕M6博睿版太空银台灯</p>
+                    <p class="explain">简约时尚的创意设计，极致匠心情怀和专业级的桌面照明性能。无频闪...</p>
+                </div>
+                <div class="picture_bottom">
+                    <a href="#" class="left">
+                        <img src="../img/714.jpg" alt="">
+                        柯莱仕
+                    </a>
+                    <a href="#" class="number">409</a>
+                </div>
+            </div>
+        </li>
+        <li class="item">
+            <div class="picture">
+                <a href="#"> <img src="../img/256856.jpg" alt=""></a>
+                <div class="block">
+                    <p class="money">￥499.00</p>
+                    <p class="title">Crasis柯莱仕M6博睿版太空银台灯</p>
+                    <p class="explain">简约时尚的创意设计，极致匠心情怀和专业级的桌面照明性能。无频闪...</p>
+                </div>
+                <div class="picture_bottom">
+                    <a href="#" class="left">
+                        <img src="../img/714.jpg" alt="">
+                        柯莱仕
+                    </a>
+                    <a href="#" class="number">409</a>
+                </div>
+            </div>
+        </li>
+        <li class="item">
+            <div class="picture">
+                <a href="#"> <img src="../img/256856.jpg" alt=""></a>
+                <div class="block">
+                    <p class="money">￥499.00</p>
+                    <p class="title">Crasis柯莱仕M6博睿版太空银台灯</p>
+                    <p class="explain">简约时尚的创意设计，极致匠心情怀和专业级的桌面照明性能。无频闪...</p>
+                </div>
+                <div class="picture_bottom">
+                    <a href="#" class="left">
+                        <img src="../img/714.jpg" alt="">
+                        柯莱仕
+                    </a>
+                    <a href="#" class="number">409</a>
+                </div>
+            </div>
+        </li>
+        <li class="item right">
+            <div class="picture">
+                <a href="#"> <img src="../img/256856.jpg" alt=""></a>
+                <div class="block">
+                    <p class="money">￥499.00</p>
+                    <p class="title">Crasis柯莱仕M6博睿版太空银台灯</p>
+                    <p class="explain">简约时尚的创意设计，极致匠心情怀和专业级的桌面照明性能。无频闪...</p>
+                </div>
+                <div class="picture_bottom">
+                    <a href="#" class="left">
+                        <img src="../img/714.jpg" alt="">
+                        柯莱仕
+                    </a>
+                    <a href="#" class="number">409</a>
+                </div>
+            </div>
+        </li>
+        <li class="item">
+            <div class="picture">
+                <a href="#"> <img src="../img/256856.jpg" alt=""></a>
+                <div class="block">
+                    <p class="money">￥499.00</p>
+                    <p class="title">Crasis柯莱仕M6博睿版太空银台灯</p>
+                    <p class="explain">简约时尚的创意设计，极致匠心情怀和专业级的桌面照明性能。无频闪...</p>
+                </div>
+                <div class="picture_bottom">
+                    <a href="#" class="left">
+                        <img src="../img/714.jpg" alt="">
+                        柯莱仕
+                    </a>
+                    <a href="#" class="number">409</a>
+                </div>
+            </div>
+        </li>
+        <li class="item">
+            <div class="picture">
+                <a href="#"> <img src="../img/256856.jpg" alt=""></a>
+                <div class="block">
+                    <p class="money">￥499.00</p>
+                    <p class="title">Crasis柯莱仕M6博睿版太空银台灯</p>
+                    <p class="explain">简约时尚的创意设计，极致匠心情怀和专业级的桌面照明性能。无频闪...</p>
+                </div>
+                <div class="picture_bottom">
+                    <a href="#" class="left">
+                        <img src="../img/714.jpg" alt="">
+                        柯莱仕
+                    </a>
+                    <a href="#" class="number">409</a>
+                </div>
+            </div>
+        </li>
+        <li class="item right">
+            <div class="picture">
+                <a href="#"> <img src="../img/256856.jpg" alt=""></a>
+                <div class="block">
+                    <p class="money">￥499.00</p>
+                    <p class="title">Crasis柯莱仕M6博睿版太空银台灯</p>
+                    <p class="explain">简约时尚的创意设计，极致匠心情怀和专业级的桌面照明性能。无频闪...</p>
+                </div>
+                <div class="picture_bottom">
+                    <a href="#" class="left">
+                        <img src="../img/714.jpg" alt="">
+                        柯莱仕
+                    </a>
+                    <a href="#" class="number">409</a>
+                </div>
+            </div>
+        </li>
+        <li class="item">
+            <div class="picture">
+                <a href="#"> <img src="../img/256856.jpg" alt=""></a>
+                <div class="block">
+                    <p class="money">￥499.00</p>
+                    <p class="title">Crasis柯莱仕M6博睿版太空银台灯</p>
+                    <p class="explain">简约时尚的创意设计，极致匠心情怀和专业级的桌面照明性能。无频闪...</p>
+                </div>
+                <div class="picture_bottom">
+                    <a href="#" class="left">
+                        <img src="../img/714.jpg" alt="">
+                        柯莱仕
+                    </a>
+                    <a href="#" class="number">409</a>
+                </div>
+            </div>
+        </li>
+        <li class="item">
+            <div class="picture">
+                <a href="#"> <img src="../img/256856.jpg" alt=""></a>
+                <div class="block">
+                    <p class="money">￥499.00</p>
+                    <p class="title">Crasis柯莱仕M6博睿版太空银台灯</p>
+                    <p class="explain">简约时尚的创意设计，极致匠心情怀和专业级的桌面照明性能。无频闪...</p>
+                </div>
+                <div class="picture_bottom">
+                    <a href="#" class="left">
+                        <img src="../img/714.jpg" alt="">
+                        柯莱仕
+                    </a>
+                    <a href="#" class="number">409</a>
+                </div>
+            </div>
+        </li>
+        <li class="item right">
+            <div class="picture">
+                <a href="#"> <img src="../img/256856.jpg" alt=""></a>
+                <div class="block">
+                    <p class="money">￥499.00</p>
+                    <p class="title">Crasis柯莱仕M6博睿版太空银台灯</p>
+                    <p class="explain">简约时尚的创意设计，极致匠心情怀和专业级的桌面照明性能。无频闪...</p>
+                </div>
+                <div class="picture_bottom">
+                    <a href="#" class="left">
+                        <img src="../img/714.jpg" alt="">
+                        柯莱仕
+                    </a>
+                    <a href="#" class="number">409</a>
+                </div>
+            </div>
+        </li>
+        <li class="item">
+            <div class="picture">
+                <a href="#"> <img src="../img/256856.jpg" alt=""></a>
+                <div class="block">
+                    <p class="money">￥499.00</p>
+                    <p class="title">Crasis柯莱仕M6博睿版太空银台灯</p>
+                    <p class="explain">简约时尚的创意设计，极致匠心情怀和专业级的桌面照明性能。无频闪...</p>
+                </div>
+                <div class="picture_bottom">
+                    <a href="#" class="left">
+                        <img src="../img/714.jpg" alt="">
+                        柯莱仕
+                    </a>
+                    <a href="#" class="number">409</a>
+                </div>
+            </div>
+        </li>
+        <li class="item">
+            <div class="picture">
+                <a href="#"> <img src="../img/256856.jpg" alt=""></a>
+                <div class="block">
+                    <p class="money">￥499.00</p>
+                    <p class="title">Crasis柯莱仕M6博睿版太空银台灯</p>
+                    <p class="explain">简约时尚的创意设计，极致匠心情怀和专业级的桌面照明性能。无频闪...</p>
+                </div>
+                <div class="picture_bottom">
+                    <a href="#" class="left">
+                        <img src="../img/714.jpg" alt="">
+                        柯莱仕
+                    </a>
+                    <a href="#" class="number">409</a>
+                </div>
+            </div>
+        </li>
+        <li class="item right">
+            <div class="picture">
+                <a href="#"> <img src="../img/256856.jpg" alt=""></a>
+                <div class="block">
+                    <p class="money">￥499.00</p>
+                    <p class="title">Crasis柯莱仕M6博睿版太空银台灯</p>
+                    <p class="explain">简约时尚的创意设计，极致匠心情怀和专业级的桌面照明性能。无频闪...</p>
+                </div>
+                <div class="picture_bottom">
+                    <a href="#" class="left">
+                        <img src="../img/714.jpg" alt="">
+                        柯莱仕
+                    </a>
+                    <a href="#" class="number">409</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div id="page">
+        <a class="check">1</a>
+        <a href="#">2</a>
+        <input  type ="button" class="next">
+         &nbsp;|&nbsp;跳转&nbsp;
+        <input type="text" class="go_page" value="1">
+        &nbsp;页
+        <input type="button" class="ok">
+    </div>
+</div>
+<!--良仓商店-->
+<div id="service">
+    <a href="#">
+        <p></p>
+    </a>
+    <div class="slogen">
+        <dl class="Boutique">
+            <dt></dt>
+            <dd>
+                <p class="chineseTop">全球精品</p>
+                <p class="english">Global Selection</p>
+            </dd>
+        </dl>
+        <dl class="correct">
+            <dt></dt>
+            <dd>
+                <p class="chineseTop">正品保证</p>
+                <p class="english">Authenticity Guaranteed</p>
+            </dd>
+        </dl>
+        <dl class="baoyou">
+            <dt></dt>
+            <dd>
+                <p class="chineseTop">全场包邮</p>
+                <p class="english">Free Delivery</p>
+            </dd>
+        </dl>
+        <dl class="phone">
+            <dt></dt>
+            <dd>
+                <p class="chineseTop">400-897-6336</p>
+                <p class="english">工作日09:00-18:00</p>
+            </dd>
+        </dl>
+    </div>
+</div>
+<!--底部-->
+<div id="footer">
+    <div class="foot">
+        <div class="foot_Left">
+            <a href="#">
+                <div class="download">
+                    <span class="iphone">iPhone Android</span>
+                    <span class="client_down">客户端下载</span>
+                    <div class="erweima">
+                        <dl class="iphone_ban">
+                            <dt></dt>
+                            <dd>下载iphone版</dd>
+                        </dl>
+                        <dl class="android_ban">
+                            <dt></dt>
+                            <dd>下载Android版</dd>
+                        </dl>
+                    </div>
+                </div>
+            </a>
+            <div class="news">
+                <ul class="toplink">
+                    <li class="word"><a href="#" class="first">关于良仓</a></li>
+                    <li class="linelist"></li>
+                    <li class="word"><a href="#">服务协议</a></li>
+                    <li class="linelist"></li>
+                    <li class="word1"> <a href="#">隐私保护政策</a></li>
+                    <li class="linelist"></li>
+                    <li class="word"><a href="#">使用指南</a></li>
+                    <li class="linelist"></li>
+                    <li class="word"><a href="#">联系我们</a></li>
+                    <li class="linelist"></li>
+                    <li class="word"><a href="#">加入我们</a></li>
+                    <li class="linelist"></li>
+                    <li class="word"><a href="#">友情链接</a></li>
+                    <li class="linelist"></li>
+                    <li class="word"> <a href="#">私信链接</a></li>
+                </ul>
+                <div class="new_page">
+                    <p >
+                        <span>@</span> 2013-2015 北京良仓文化传播有限公司版权所有&nbsp;京<span>ICP</span>备<span>13010677</span>号<span>-1</span>&nbsp;京公网安备<span>11010502025627</span>
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;公司名称：北京良仓文化传播有限公司&nbsp;&nbsp;电话:010-58263516
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;公司地址:北京朝阳区百子湾路32号6号楼1层60号.
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;社会信用统一代码:91110105059231575L&nbsp;&nbsp;食品许可证:JY11105160159557&nbsp;&nbsp;
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="foot_Right">
+            <ul >
+                <li>
+                    <a href="#" class="douban"></a>
+                </li>
+                <li>
+                    <a class="sina" href="#"></a>
+                </li>
+                <li class="wei_xin">
+                    <a href="#" class="weixin"></a>
+                    <div class="w_x">
+                        <s></s>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<!--回到顶部-->
+<div id="go_top">
+    <a href="#"></a>
+</div>
+<div id="kefu">
+    <a href="#">
+        联系客服
+    </a>
+</div>
+</body>
+</html>

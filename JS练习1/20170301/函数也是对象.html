@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //字面量的方式创建对象
+    function  fun() {
+        console.log("我是个函数");
+    }
+    //通过Function构造函数去声明一个函数
+    var fun=new Function("console.log(‘我是function创建出来的’)");
+    fun();
+
+    //创建一个带参数的函数
+    var fun1=new Function ("a","b","return (a+b)");
+    console.log(fun1(1,2));
+
+</script>
+</body>
+</html>

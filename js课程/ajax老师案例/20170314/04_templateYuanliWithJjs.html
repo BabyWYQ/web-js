@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        table,tr,td{
+            border:1px solid #ccc;
+            border-collapse: collapse;
+        }
+        .special{ background-color: skyblue; }
+    </style>
+</head>
+<body>
+    <table id="table">
+        <tr>
+            <td>学号</td>
+            <td>姓名</td>
+            <td>年龄</td>
+            <td>性别</td>
+        </tr>
+    </table>
+
+    <!--在工程上，我们使用一个故意写错type的script标签存放模板-->
+    <script type="text/template" id="template">
+        <tr class="%leiming%">
+            <td>%xuehao%</td>
+            <td>%xingming%</td>
+            <td>%nianling%</td>
+            <td>%xingbie%</td>
+        </tr>
+    </script>
+    <script src="js/j.js"></script>
+    <script>
+        var table = document.getElementById("table");
+        //读取模板字符串
+        var templateString = document
+                .getElementById("template").innerHTML;
+        j.get('student.json', {}, function(err,data){
+           console.log(data);
+            var obj = JSON.parse(data);
+            for (var i = 0; i < obj.result.length; i++) {
+                //拿到数据
+                var dictionary = obj.result[i];
+                //字典修正，根据字典中的某一些项的情况，再设置一些项目
+                dictionary.leiming = dictionary.nianling >= 18 ? "" : "special";
+                console.log(dictionary);
+                //数据绑定
+                var DOMString = j.compile(templateString, dictionary);
+                //添加DOM
+                table.innerHTML += DOMString;
+            }
+        });
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 80px;
+            height: 80px;
+            background-color: skyblue;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+<script>
+    oDiv =document.getElementsByTagName("div")[0];
+    var nowleft=100;
+    var target=1000;//要移动的位置
+    var time=10000;//动画总时间
+    var interval=20;//间隔时间
+    var maxFrame=time/interval;//总帧数
+    var step =(target-nowleft)/maxFrame;//步长
+    var frameNuber=0;//当前的帧数
+
+    var timer =setInterval(function(){
+        nowleft+=step;
+        frameNuber++;
+        if(frameNuber==maxFrame){
+            clearInterval(timer);
+        }
+        oDiv.style.left=nowleft+"px";
+    },interval);
+</script>
+</body>
+</html>

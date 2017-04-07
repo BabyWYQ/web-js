@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var obj1={
+        "name":"韩笑"
+    };
+    function  showName(a,b,c) {
+        console.log(this.name);
+        console.log(a+b+c);
+    };
+    //call是数
+    showName.call(obj1,2,3,4);
+    //apply接受的是数组
+    showName.apply(obj1,[2,3,4]);
+
+
+
+</script>
+</body>
+</html>

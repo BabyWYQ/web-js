@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+             margin:0;
+             padding:0;
+         }
+        .carousel{
+            width:300px;
+            height:300px;
+            margin:50px auto;
+            position: relative;
+        }
+        .carousel ul{
+            list-style: none;
+        }
+        .carousel ul li{
+            display: none;
+        }
+        .carousel ul li.current {
+            display:block;
+        }
+        .carousel span{
+            position:absolute;
+            width:55px;
+            height:55px;
+            top:130px;
+            cursor:pointer;
+        }
+        .carousel .leftBtn{
+            left: 10px;
+            background:url(../img/left.png);
+        }
+        .carousel .rightBtn{
+            right: 10px;
+            background:url(../img/right.png);
+        }
+        .carousel .circles{
+            position:absolute;
+            bottom:20px;
+            width:210px;
+            height: 17px;
+            left:50%;
+            margin-left:-90px;
+        }
+        .carousel .circles ol{
+            list-style: none;
+        }
+        .carousel .circles ol li{
+            float:left;
+            width: 14px;
+            height: 14px;
+            margin-right:9px;
+            background-color:gray;
+            border-radius:50%;
+            cursor: pointer;
+        }
+        .carousel .circles ol li.current{
+            background-color:red;
+        }
+    </style>
+</head>
+<body>
+<div id="carousel" class="carousel">
+    <div id="imagesList" class="imagesList">
+        <ul>
+            <li class="current"><a href=""><img src="../images/1.jpg" alt=""></a></li>
+            <li><a href=""><img src="2.jpg" alt=""></a></li>
+            <li><a href=""><img src="../images/3.jpg" alt=""></a></li>
+            <li><a href=""><img src="../images/4.jpg" alt=""></a></li>
+            <li><a href=""><img src="../images/5.jpg" alt=""></a></li>
+            <li><a href=""><img src="../images/6.jpg" alt=""></a></li>
+            <li><a href=""><img src="../images/7.jpg" alt=""></a></li>
+            <li><a href=""><img src="../images/8.jpg" alt=""></a></li>
+            <li><a href=""><img src="../images/9.jpg" alt=""></a></li>
+        </ul>
+    </div>
+    <div class="btns">
+        <span class="leftBtn" id="carousel_leftBtn"></span>
+        <span class="rightBtn" id="carousel_rightBtn"></span>
+    </div>
+    <div id="circles" class="circles">
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+</div>
+<script>
+    //得到元素
+    var imglist=document.getElementById("imagesList").getElementsByTagName("li");
+    var leftBtn=document.getElementById("carousel_leftBtn");
+    var rightBtn=document.getElementById("carousel_rightBtn");
+    var circlesList=document.getElementById("circles").getElementsByTagName("li");
+     //信号量
+     var nowImg=0;
+     //绑定事件
+    leftBtn.onclick=function(){
+        nowImg--;
+        if(nowImg<0){
+            nowImg=8;
+        }
+        changePic();
+    }
+    rightBtn.onclick=function(){
+        nowImg++;
+        if(nowImg>8){
+            nowImg=0;
+        }
+        changePic();
+    }
+    //小圆点
+    for(var j=0;j<circlesList.length;j++){
+        (function (m) {
+            circlesList[m].onmouseover=function(){
+                nowImg=m;
+                changePic();
+            }
+        })(j)
+    }
+    //业务
+    function changePic(){
+        for(var i=0;i<imglist.length;i++){
+            imglist[i].className="";
+            circlesList[i].className="";
+        }
+        imglist[nowImg].className="current"
+        circlesList[nowImg].className="current";
+    }
+</script>
+</body>
+</html>

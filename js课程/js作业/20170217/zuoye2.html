@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="button" value="上一张" id="shang"/>
+    <img src="images/lunbo/1.jpeg" alt="" id="tutu"/>
+    <input type="button" value="下一张" id ="xia" />
+
+<p>
+    <input type="text" value="1" id="numtext">
+    <input type="button" value="go" id="gobtn">
+
+</p>
+    <script type="text/javascript">
+        //用字符串拼接法
+        var oTutu= document.getElementById("tutu");
+        var oShang=document.getElementById("shang");
+        var oXia=document.getElementById("xia");
+        var oNumText=document.getElementById("numtext");
+        var oGoBtn=document.getElementById("gobtn");
+        var  index=1;
+        oShang.onclick=function(){
+            index --;
+            if(index<1){
+                index=5;
+            };
+            change();
+        };
+        oXia.onclick=function(){
+            index ++;
+            if (index>5){
+                index=1;
+            };
+            change();
+        };
+        oGoBtn.onclick=function(){
+            index=oNumText.value;
+            if(index<1||index>5){
+                alert("不合法的数值");
+                return;
+            }
+            change();
+        };
+        function change(){
+            oTutu.src="images/lunbo/"+index+".jpeg";
+        }
+    </script>
+</body>
+</html>

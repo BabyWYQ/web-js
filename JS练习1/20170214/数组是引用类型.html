@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //不能判断相等
+        var a=[1,2,3];
+        var b=[1,2,3];
+        console.log(a==b); //false
+        //*************************
+         var a=[1,2,3,4];
+        var b=a;//a的引用赋值给了b
+        b=[6,7,8,9];// b 也指向了新的数组；
+        console.log(a);//a 不变
+        //****************88
+       var  a=[,2,3,4,45];
+        var b=a;
+        b=1;
+        console.log(a);//a不变
+        //*********************
+        var a=[1,2,3,4,5];
+        var b=a;
+        b[0]=88;
+        console.log(a);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

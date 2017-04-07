@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h2>本站拥有世界上最丰富的手机号码数据库，免费查询</h2>
+<p>
+    <input type="text" id="mobile">
+    <input type="button" value="点击查询归属地" id="btn">
+</p>
+<p>
+    归属地：<span id="location"></span>
+</p>
+<script src="js/j.js"></script>
+<script>
+    var oBtn = document.getElementById("btn");
+    oBtn.onclick = function(){
+        var mobile = document.getElementById("mobile").value;
+        if (!/^1[3578]\d{9}$/.test(mobile)) {
+            alert("手机号码不正确，请重新输入");
+            return;
+        }
+        j.get('api/mobile.php', {'mobile':mobile}, function(err,data){
+            if (err) return;
+            var obj = JSON.parse(data);
+            document.getElementById("location").innerHTML = obj.areaName;
+        })
+    }
+</script>
+
+</body>
+</html>

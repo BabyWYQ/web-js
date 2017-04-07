@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 80px;
+            height: 80px;background-color: gold;
+            position: absolute;
+            top:111px;
+            left:111px;
+        }
+    </style>
+</head>
+<body>
+<div id="box"></div>
+<script>
+    var oDiv=document.getElementById("box");
+    var nowleft=111;
+    var nowtop=111;
+    var nowwidth=111;
+    setInterval(function(){
+        nowleft+=10;
+        nowtop+=10;
+        nowwidth+=10;
+        oDiv.style.left=nowleft+"px";
+        oDiv.style.top=nowtop+"px";
+        oDiv.style.width=nowwidth+"px";
+    },20);
+
+</script>
+</body>
+</html>

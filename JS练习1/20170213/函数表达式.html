@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var haha=function(a,b){
+            return a+b;
+        }
+        //等价于
+        function haha(a,b) {
+            return a+b;
+        }
+        console.log(haha(3,5));
+        //............函数表达式不能提升.....................
+        haha();
+        var haha=function(){
+            console.log("I am a girl")
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

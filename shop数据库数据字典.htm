@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://localhost/test/ucaishop/data_struct.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>shop数据库数据字典</title>
+<meta name="generator" content="ThinkDb V1.0">
+<meta name="author" content="shop数据库数据字典">
+<meta name="copyright" content="2008-2014 Tensent Inc.">
+<style>
+body, td, th { font-family: "微软雅黑"; font-size: 14px; }
+.warp{margin:auto; width:900px;}
+.warp h3{margin:0px; padding:0px; line-height:30px; margin-top:10px;}
+table { border-collapse: collapse; border: 1px solid #CCC; background: #efefef; }
+table th { text-align: left; font-weight: bold; height: 26px; line-height: 26px; font-size: 14px; text-align:center; border: 1px solid #CCC; padding:5px;}
+table td { height: 20px; font-size: 14px; border: 1px solid #CCC; background-color: #fff; padding:5px;}
+.c1 { width: 120px; }
+.c2 { width: 120px; }
+.c3 { width: 150px; }
+.c4 { width: 80px; text-align:center;}
+.c5 { width: 80px; text-align:center;}
+.c6 { width: 270px; }
+</style>
+</head>
+<body>
+<div class="warp">
+    <h1 style="text-align:center;">shop数据库数据字典</h1>
+  <h3>1、广告表  （ucshop_ad）</h3>
+  <table border="1" cellspacing="0" cellpadding="0" width="100%">
+      <tbody>
+          <tr>
+              <th>字段名</th>
+              <th>数据类型</th>
+              <th>默认值</th>
+              <th>允许非空</th>
+              <th>自动递增</th>
+              <th>备注</th>
+          </tr>
+          <tr>
+              <td class="c1">ad_id</td>
+              <td class="c2">smallint(5) unsigned</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">是</td>
+              <td class="c6">广告编号</td>
+          </tr>
+          <tr>
+              <td class="c1">position_id</td>
+              <td class="c2">int(5) unsigned</td>
+              <td class="c3">0</td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">广告位编号</td>
+          </tr>
+          <tr>
+              <td class="c1">title</td>
+              <td class="c2">varchar(30)</td>
+              <td class="c3"> </td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">标题</td>
+          </tr>
+          <tr>
+              <td class="c1">thumb</td>
+              <td class="c2">varchar(100)</td>
+              <td class="c3"> </td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">缩略图</td>
+          </tr>
+          <tr>
+              <td class="c1">url</td>
+              <td class="c2">varchar(100)</td>
+              <td class="c3"> </td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">地址</td>
+          </tr>
+          <tr>
+              <td class="c1">goods_id</td>
+              <td class="c2">int(11) unsigned</td>
+              <td class="c3">0</td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">商品编号</td>
+          </tr>
+          <tr>
+              <td class="c1">sort_order</td>
+              <td class="c2">tinyint(3) unsigned</td>
+              <td class="c3">50</td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">排序 升序</td>
+          </tr>
+          <tr>
+              <td class="c1">start_time</td>
+              <td class="c2">int(10) unsigned</td>
+              <td class="c3">0</td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">开始时间</td>
+          </tr>
+          <tr>
+              <td class="c1">end_time</td>
+              <td class="c2">int(10) unsigned</td>
+              <td class="c3">0</td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">结束时间</td>
+          </tr>
+          <tr>
+              <td class="c1">click_count</td>
+              <td class="c2">int(10) unsigned</td>
+              <td class="c3">0</td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">点击次数</td>
+          </tr>
+          <tr>
+              <td class="c1">is_enable</td>
+              <td class="c2">tinyint(1) unsigned</td>
+              <td class="c3">0</td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">是否可用 1可用 0不可用</td>
+          </tr>
+      </tbody>
+  </table>
+  <h3>2、购物车表  （ucshop_cart）</h3>
+  <table border="1" cellspacing="0" cellpadding="0" width="100%">
+      <tbody>
+          <tr>
+              <th>字段名</th>
+              <th>数据类型</th>
+              <th>默认值</th>
+              <th>允许非空</th>
+              <th>自动递增</th>
+              <th>备注</th>
+          </tr>
+          <tr>
+              <td class="c1">cart_id</td>
+              <td class="c2">mediumint(8) unsigned</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">是</td>
+              <td class="c6">购物车编号</td>
+          </tr>
+          <tr>
+              <td class="c1">user_id</td>
+              <td class="c2">mediumint(8) unsigned</td>
+              <td class="c3">0</td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">用户编号</td>
+          </tr>
+          <tr>
+              <td class="c1">cat_id</td>
+              <td class="c2">mediumint(8) unsigned</td>
+              <td class="c3">0</td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">分类编号</td>
+          </tr>
+          <tr>
+              <td class="c1">cat_name</td>
+              <td class="c2">varchar(60)</td>
+              <td class="c3"> </td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">分类名称</td>
+          </tr>
+          <tr>
+              <td class="c1">goods_id</td>
+              <td class="c2">mediumint(8) unsigned</td>
+              <td class="c3">0</td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">商品编号</td>
+          </tr>
+          <tr>
+              <td class="c1">goods_name</td>
+              <td class="c2">varchar(120)</td>
+              <td class="c3"> </td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">商品名称</td>
+          </tr>
+          <tr>
+              <td class="c1">goods_thumb</td>
+              <td class="c2">varchar(255)</td>
+              <td class="c3"> </td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">商品缩略图</td>
+          </tr>
+          <tr>
+              <td class="c1">goods_price</td>
+              <td class="c2">decimal(10,2) unsigned</td>
+              <td class="c3">0.00</td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">价格</td>
+          </tr>
+          <tr>
+              <td class="c1">goods_number</td>
+              <td class="c2">smallint(5) unsigned</td>
+              <td class="c3">0</td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">数量</td>
+          </tr>
+      </tbody>
+  </table>
+  <h3>3、商品分类  （ucshop_category）</h3>
+  <table border="1" cellspacing="0" cellpadding="0" width="100%">
+      <tbody>
+          <tr>
+              <th>字段名</th>
+              <th>数据类型</th>
+              <th>默认值</th>
+              <th>允许非空</th>
+              <th>自动递增</th>
+              <th>备注</th>
+          </tr>
+          <tr>
+              <td class="c1">cat_id</td>
+              <td class="c2">smallint(5) unsigned</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">是</td>
+              <td class="c6">分类编号</td>
+          </tr>
+          <tr>
+              <td class="c1">cat_name</td>
+              <td class="c2">varchar(90)</td>
+              <td class="c3"> </td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">分类名称</td>
+          </tr>
+          <tr>
+              <td class="c1">cat_desc</td>
+              <td class="c2">varchar(255)</td>
+              <td class="c3"> </td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">分类描述</td>
+          </tr>
+          <tr>
+              <td class="c1">icon</td>
+              <td class="c2">varchar(255)</td>
+              <td class="c3"> </td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">分类图标</td>
+          </tr>
+          <tr>
+              <td class="c1">sort_order</td>
+              <td class="c2">tinyint(1) unsigned</td>
+              <td class="c3">50</td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">排序 升序</td>
+          </tr>
+          <tr>
+              <td class="c1">parent_id</td>
+              <td class="c2">smallint(5) unsigned</td>
+              <td class="c3">0</td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">父分类编号，用来做无限分类</td>
+          </tr>
+          <tr>
+              <td class="c1">is_show</td>
+              <td class="c2">tinyint(1) unsigned</td>
+              <td class="c3">1</td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">是否显示 1显示 0隐藏</td>
+          </tr>
+      </tbody>
+  </table>
+  <h3>4、商品表  （ucshop_goods）</h3>
+  <table border="1" cellspacing="0" cellpadding="0" width="100%">
+      <tbody>
+          <tr>
+              <th>字段名</th>
+              <th>数据类型</th>
+              <th>默认值</th>
+              <th>允许非空</th>
+              <th>自动递增</th>
+              <th>备注</th>
+          </tr>
+          <tr>
+              <td class="c1">goods_id</td>
+              <td class="c2">mediumint(8) unsigned</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">是</td>
+              <td class="c6">商品编号</td>
+          </tr>
+          <tr>
+              <td class="c1">cat_id</td>
+              <td class="c2">smallint(5) unsigned</td>
+              <td class="c3">0</td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">分类编号</td>
+          </tr>
+          <tr>
+              <td class="c1">cat_name</td>
+              <td class="c2">varchar(60)</td>
+              <td class="c3"> </td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">分类名称</td>
+          </tr>
+          <tr>
+              <td class="c1">goods_name</td>
+              <td class="c2">varchar(120)</td>
+              <td class="c3"> </td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">商品名称</td>
+          </tr>
+          <tr>
+              <td class="c1">goods_thumb</td>
+              <td class="c2">varchar(255)</td>
+              <td class="c3"> </td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">商品缩略图</td>
+          </tr>
+          <tr>
+              <td class="c1">goods_number</td>
+              <td class="c2">mediumint(8) unsigned</td>
+              <td class="c3">0</td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">商品数量</td>
+          </tr>
+          <tr>
+              <td class="c1">sort_order</td>
+              <td class="c2">smallint(4) unsigned</td>
+              <td class="c3">50</td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">排序 升序</td>
+          </tr>
+          <tr>
+              <td class="c1">price</td>
+              <td class="c2">decimal(10,2) unsigned</td>
+              <td class="c3">0.00</td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">商品价格</td>
+          </tr>
+          <tr>
+              <td class="c1">is_new</td>
+              <td class="c2">tinyint(1) unsigned</td>
+              <td class="c3">0</td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">是否是新品 1是新品 0不是新品</td>
+          </tr>
+          <tr>
+              <td class="c1">is_best</td>
+              <td class="c2">tinyint(1) unsigned</td>
+              <td class="c3">0</td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">是否精品 1是精品 0不是精品</td>
+          </tr>
+          <tr>
+              <td class="c1">is_hot</td>
+              <td class="c2">tinyint(1) unsigned</td>
+              <td class="c3">0</td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">是否热门 1是热门 0不是热门</td>
+          </tr>
+      </tbody>
+  </table>
+  <h3>5、商品内容表  （ucshop_goods_content）</h3>
+  <table border="1" cellspacing="0" cellpadding="0" width="100%">
+      <tbody>
+          <tr>
+              <th>字段名</th>
+              <th>数据类型</th>
+              <th>默认值</th>
+              <th>允许非空</th>
+              <th>自动递增</th>
+              <th>备注</th>
+          </tr>
+          <tr>
+              <td class="c1">goods_content_id</td>
+              <td class="c2">int(10) unsigned</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">是</td>
+              <td class="c6">商品内容编号</td>
+          </tr>
+          <tr>
+              <td class="c1">goods_id</td>
+              <td class="c2">int(10) unsigned</td>
+              <td class="c3">0</td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">商品编号</td>
+          </tr>
+          <tr>
+              <td class="c1">content</td>
+              <td class="c2">text</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">内容</td>
+          </tr>
+          <tr>
+              <td class="c1">images</td>
+              <td class="c2">varchar(255)</td>
+              <td class="c3"> </td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">商品图片</td>
+          </tr>
+      </tbody>
+  </table>
+  <h3>6、商品订单表  （ucshop_order）</h3>
+  <table border="1" cellspacing="0" cellpadding="0" width="100%">
+      <tbody>
+          <tr>
+              <th>字段名</th>
+              <th>数据类型</th>
+              <th>默认值</th>
+              <th>允许非空</th>
+              <th>自动递增</th>
+              <th>备注</th>
+          </tr>
+          <tr>
+              <td class="c1">order_id</td>
+              <td class="c2">mediumint(8) unsigned</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">是</td>
+              <td class="c6">订单编号</td>
+          </tr>
+          <tr>
+              <td class="c1">user_id</td>
+              <td class="c2">mediumint(8) unsigned</td>
+              <td class="c3">0</td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">用户编号</td>
+          </tr>
+          <tr>
+              <td class="c1">order_status</td>
+              <td class="c2">tinyint(1) unsigned</td>
+              <td class="c3">5</td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">订单状态 5未支付 10支付成功 15支付失败 20已完成</td>
+          </tr>
+          <tr>
+              <td class="c1">consignee</td>
+              <td class="c2">varchar(60)</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">收货人</td>
+          </tr>
+          <tr>
+              <td class="c1">country</td>
+              <td class="c2">varchar(60)</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">国家</td>
+          </tr>
+          <tr>
+              <td class="c1">province</td>
+              <td class="c2">varchar(60)</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">省份</td>
+          </tr>
+          <tr>
+              <td class="c1">city</td>
+              <td class="c2">varchar(60)</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">城市</td>
+          </tr>
+          <tr>
+              <td class="c1">district</td>
+              <td class="c2">varchar(60)</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">区域</td>
+          </tr>
+          <tr>
+              <td class="c1">address</td>
+              <td class="c2">varchar(60)</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">地址</td>
+          </tr>
+          <tr>
+              <td class="c1">sign_building</td>
+              <td class="c2">varchar(60)</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">标志性建筑</td>
+          </tr>
+          <tr>
+              <td class="c1">zipcode</td>
+              <td class="c2">varchar(60)</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">邮编</td>
+          </tr>
+          <tr>
+              <td class="c1">tel</td>
+              <td class="c2">varchar(60)</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">电话号码</td>
+          </tr>
+          <tr>
+              <td class="c1">mobile</td>
+              <td class="c2">varchar(60)</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">手机号码</td>
+          </tr>
+          <tr>
+              <td class="c1">email</td>
+              <td class="c2">varchar(60)</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">邮箱</td>
+          </tr>
+          <tr>
+              <td class="c1">best_time</td>
+              <td class="c2">varchar(120)</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">送货最佳时间段</td>
+          </tr>
+      </tbody>
+  </table>
+  <h3>7、广告位表  （ucshop_position）</h3>
+  <table border="1" cellspacing="0" cellpadding="0" width="100%">
+      <tbody>
+          <tr>
+              <th>字段名</th>
+              <th>数据类型</th>
+              <th>默认值</th>
+              <th>允许非空</th>
+              <th>自动递增</th>
+              <th>备注</th>
+          </tr>
+          <tr>
+              <td class="c1">position_id</td>
+              <td class="c2">int(10) unsigned</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">是</td>
+              <td class="c6">广告位编号</td>
+          </tr>
+          <tr>
+              <td class="c1">name</td>
+              <td class="c2">varchar(60)</td>
+              <td class="c3"> </td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">广告位名称</td>
+          </tr>
+          <tr>
+              <td class="c1">description</td>
+              <td class="c2">varchar(255)</td>
+              <td class="c3"> </td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">广告位描述</td>
+          </tr>
+          <tr>
+              <td class="c1">is_show</td>
+              <td class="c2">tinyint(1) unsigned</td>
+              <td class="c3">1</td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">是否显示 1显示 0隐藏</td>
+          </tr>
+      </tbody>
+  </table>
+  <h3>8、用户表  （ucshop_user）</h3>
+  <table border="1" cellspacing="0" cellpadding="0" width="100%">
+      <tbody>
+          <tr>
+              <th>字段名</th>
+              <th>数据类型</th>
+              <th>默认值</th>
+              <th>允许非空</th>
+              <th>自动递增</th>
+              <th>备注</th>
+          </tr>
+          <tr>
+              <td class="c1">user_id</td>
+              <td class="c2">mediumint(8) unsigned</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">是</td>
+              <td class="c6">用户编号</td>
+          </tr>
+          <tr>
+              <td class="c1">email</td>
+              <td class="c2">varchar(60)</td>
+              <td class="c3"> </td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">邮箱</td>
+          </tr>
+          <tr>
+              <td class="c1">username</td>
+              <td class="c2">varchar(60)</td>
+              <td class="c3"> </td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">用户名</td>
+          </tr>
+          <tr>
+              <td class="c1">password</td>
+              <td class="c2">varchar(32)</td>
+              <td class="c3"> </td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">密码</td>
+          </tr>
+          <tr>
+              <td class="c1">salt</td>
+              <td class="c2">char(10)</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">盐</td>
+          </tr>
+          <tr>
+              <td class="c1">sex</td>
+              <td class="c2">tinyint(1) unsigned</td>
+              <td class="c3">0</td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">性别 0保密 1男 2女</td>
+          </tr>
+          <tr>
+              <td class="c1">avatar</td>
+              <td class="c2">varchar(255)</td>
+              <td class="c3"> </td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">头像</td>
+          </tr>
+          <tr>
+              <td class="c1">last_login_ip</td>
+              <td class="c2">varchar(15)</td>
+              <td class="c3"> </td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">最后登录IP</td>
+          </tr>
+          <tr>
+              <td class="c1">last_login_time</td>
+              <td class="c2">int(11) unsigned</td>
+              <td class="c3">0</td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">最后登录时间</td>
+          </tr>
+          <tr>
+              <td class="c1">reg_time</td>
+              <td class="c2">int(11) unsigned</td>
+              <td class="c3">0</td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">注册时间</td>
+          </tr>
+      </tbody>
+  </table>
+  <h3>9、用户地址表  （ucshop_user_address）</h3>
+  <table border="1" cellspacing="0" cellpadding="0" width="100%">
+      <tbody>
+          <tr>
+              <th>字段名</th>
+              <th>数据类型</th>
+              <th>默认值</th>
+              <th>允许非空</th>
+              <th>自动递增</th>
+              <th>备注</th>
+          </tr>
+          <tr>
+              <td class="c1">address_id</td>
+              <td class="c2">int(11) unsigned</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">是</td>
+              <td class="c6">地址编号</td>
+          </tr>
+          <tr>
+              <td class="c1">address_name</td>
+              <td class="c2">varchar(100)</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">地址名称</td>
+          </tr>
+          <tr>
+              <td class="c1">user_id</td>
+              <td class="c2">int(11) unsigned</td>
+              <td class="c3">0</td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">用户编号</td>
+          </tr>
+          <tr>
+              <td class="c1">consignee</td>
+              <td class="c2">varchar(60)</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">收货人</td>
+          </tr>
+          <tr>
+              <td class="c1">email</td>
+              <td class="c2">varchar(60)</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">邮箱</td>
+          </tr>
+          <tr>
+              <td class="c1">country</td>
+              <td class="c2">varchar(60)</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">国家</td>
+          </tr>
+          <tr>
+              <td class="c1">province</td>
+              <td class="c2">varchar(60)</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">省份</td>
+          </tr>
+          <tr>
+              <td class="c1">city</td>
+              <td class="c2">varchar(60)</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">城市</td>
+          </tr>
+          <tr>
+              <td class="c1">district</td>
+              <td class="c2">varchar(60)</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">区域</td>
+          </tr>
+          <tr>
+              <td class="c1">address</td>
+              <td class="c2">varchar(60)</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">地址</td>
+          </tr>
+          <tr>
+              <td class="c1">zipcode</td>
+              <td class="c2">varchar(60)</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">邮编</td>
+          </tr>
+          <tr>
+              <td class="c1">tel</td>
+              <td class="c2">varchar(60)</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">电话号码</td>
+          </tr>
+          <tr>
+              <td class="c1">mobile</td>
+              <td class="c2">varchar(60)</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">手机号码</td>
+          </tr>
+          <tr>
+              <td class="c1">sign_building</td>
+              <td class="c2">varchar(60)</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">标志性建筑</td>
+          </tr>
+          <tr>
+              <td class="c1">best_time</td>
+              <td class="c2">varchar(60)</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">收货最佳时间</td>
+          </tr>
+      </tbody>
+  </table>
+  <h3>10、Token表  （ucshop_user_token）</h3>
+  <table border="1" cellspacing="0" cellpadding="0" width="100%">
+      <tbody>
+          <tr>
+              <th>字段名</th>
+              <th>数据类型</th>
+              <th>默认值</th>
+              <th>允许非空</th>
+              <th>自动递增</th>
+              <th>备注</th>
+          </tr>
+          <tr>
+              <td class="c1">user_id</td>
+              <td class="c2">int(11) unsigned</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">用户编号</td>
+          </tr>
+          <tr>
+              <td class="c1">token</td>
+              <td class="c2">char(32)</td>
+              <td class="c3"></td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">token</td>
+          </tr>
+          <tr>
+              <td class="c1">pass_time</td>
+              <td class="c2">int(11) unsigned</td>
+              <td class="c3">0</td>
+              <td class="c4">NO</td>
+              <td class="c5">&nbsp;</td>
+              <td class="c6">过期时间</td>
+          </tr>
+      </tbody>
+  </table>
+</div>
+
+
+</body></html>

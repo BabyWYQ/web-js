@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .rolling{
+            width: 800px;
+            height: 130px;
+            border:10px solid #ccc;
+            margin:100px auto;
+            position: absolute;
+            overflow: hidden;
+        }
+        .rolling .m_unit{
+            width: 5000px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .rolling ul{
+            list-style: none;
+        }
+        .rolling ul li{
+            float: left;
+            margin-right:10px;
+            background:url(images/loading.gif);
+        }
+    </style>
+</head>
+<body>
+<div id="rolling" class="rolling">
+    <div id="m_unit" class="m_unit">
+        <ul>
+            <li><a href=""><img src="images/0.png" alt=""></a></li>
+            <li><a href=""><img src="images/2.png" alt=""></a></li>
+            <li><a href=""><img src="images/3.png" alt=""></a></li>
+            <li><a href=""><img src="images/4.png" alt=""></a></li>
+            <li><a href=""><img src="images/5.png" alt=""></a></li>
+            <li><a href=""><img src="images/6.png" alt=""></a></li>
+            <li><a href=""><img src="images/7.png" alt=""></a></li>
+            <li><a href=""><img src="images/8.png" alt=""></a></li>
+        </ul>
+    </div>
+</div>
+<script>
+    var rolling=document.getElementById("rolling");
+    var m_unit=document.getElementById("m_unit");
+    var listul=document.getElementsByTagName("ul")[0];
+    //得到li的个数
+    var lislength=listul.getElementsByTagName("li").length;
+    //复制一倍的li
+    listul.innerHTML=listul.innerHTML+listul.innerHTML;
+    //信号量
+    var nowleft=0;
+    var timer;
+    move();
+    //鼠标进入
+    rolling.onmouseover=function(){
+        clearInterval(timer);
+    };
+    //鼠标离开
+    rolling.onmouseout=function(){
+        move();
+    };
+    function  move() {
+        clearInterval(timer);
+        //运动
+        timer=setInterval(function () {
+            nowleft -=3;
+            if(nowleft<-210*lislength){
+                nowleft=0;
+            }
+            m_unit.style.left=nowleft+"px";
+        },1);
+    }
+</script>
+</body>
+</html>

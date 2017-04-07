@@ -1,0 +1,103 @@
+/*登录页面的css样式*/
+*{
+    margin:0;
+    padding:0;
+}
+#box{
+    width: 1000px;
+    margin:0 auto;
+}
+#loginForm{
+    width: 100%;
+    display: inline-block;
+    color: #495c81;
+    height: 560px;
+}
+.loginTable{
+    width:300px;
+    height:615px;
+    margin:0 auto;
+    position:relative;
+}
+.logo a>img{
+    margin:60px 0 60px 93px;
+}
+.call_number td{
+    height:36px;
+}
+.call_number td div input {
+    border:0;
+    outline:none;
+    border-bottom:1px solid #000;
+    font-size:18px;
+    width: 265px;
+    height: 28px;
+    line-height:28px;
+    padding-left:35px;
+    background:url("../img/nlphone.png")no-repeat;
+
+}
+.verify_number td{
+    height:36px;
+}
+.auth_code{
+    position:relative;
+    padding-top:22px;
+}
+.auth_code input{
+    border:0;
+    outline:none;
+    border-bottom:1px solid #000;
+    font-size:18px;
+    width: 137px;
+    height: 28px;
+    float:left;
+    line-height:28px;
+    padding-left:35px;
+    background:url("../img/nlcode.png")no-repeat;
+}
+.auth_code div{
+    border:1px solid #000;
+    height: 34px;
+    line-height:34px;
+    width:110px;
+    font-size:16px;
+    margin-left:12px;
+    border-radius: 4px;
+    color:#333;
+    float:right;
+    cursor:pointer;
+    text-align:center;
+}
+.zd_login td{
+    padding-top:22px;
+}
+.zd_login span {
+    color:#000;
+    font-size:15px;
+}
+.login td{
+    padding-top:22px;
+}
+.login td input{
+    width: 300px;
+    height: 50px;
+    border:0;
+    border-radius:4px;
+    background:#25292e;
+    font-size:18px;
+    color:#fff;
+    margin-top:9px;
+    cursor: pointer;
+    margin-bottom: 30px;;
+}
+.a{
+    color:#000;
+    font-size:15px;
+    text-decoration: none;
+    padding-bottom:10px;
+}
+.more td{
+    text-align:center;
+}
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1>小小留言本</h1>
+<a href="write.html">添加留言</a>
+<table>
+    <tr>
+        <td>id</td>
+        <td>用户名</td>
+        <td>邮箱</td>
+        <td>内容</td>
+        <td></td>
+    </tr>
+</table>
+<script>
+    var table = document.getElementsByTagName("table")[0];
+    function fun(obj) {
+        for (var i = 0; i < obj.result.length; i++) {
+            var o = obj.result[i];
+            table.innerHTML +=
+                    "<tr>" +
+                    "<td>" + o.id + "</td>" +
+                    "<td>" + o.username + "</td>" +
+                    "<td>" + o.email + "</td>" +
+                    "<td>" + o.content + "</td>" +
+                    "<td><a data-id='" + o.id +
+                    "' href='javascript:;' class='delete'>删除</a></td>" +
+                    "</tr>";
+        }
+    }
+</script>
+<script src="http://duchengjiu.top/ucai_classmates/6qi/duchengjiu/chat/api/readjsonp.php"></script>
+
+</body>
+</html>

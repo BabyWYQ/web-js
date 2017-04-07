@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div></div>
+<div>
+    <p></p>
+    <p>
+        <span>*</span><span>*</span><span>*</span>
+    </p>
+    <p></p>
+    <p></p>
+</div>
+<div></div>
+<script>
+    document.getElementsByTagName("div")[1]//获取第二个div
+        .getElementsByTagName("p")[1] //获取第二个p
+        .getElementsByTagName("span")[1]//获取第二个span
+        .style.color="red";//改变他的样式
+</script>
+</body>
+</html>

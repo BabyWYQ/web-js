@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单页</title>
+    <link rel="stylesheet" href="../css/dingdan.css">
+</head>
+<body>
+<!--导航头-->
+    <div id="header_box">
+    <!--一级导航-->
+    <div class="header_top">
+        <div class="first_navigation">
+            <!--logo-->
+            <a href="#" class="a"></a>
+            <!--右边列表-->
+            <ul class="nav">
+                <li class="login_reg">
+                    <a href="html/denglu.html" class="login">登录</a>
+                    <a href="html/zhuce.html" class="reg">注册</a>
+                </li>
+                <li class="line"></li>
+                <li class="car_shopping">
+                    <a href="#">购物车</a>
+                    <div class="car_up">
+                        <div><a href="#">你的购物车暂时没有商品...</a></div>
+                        <p><a href="#">快去抢购良仓商品吧</a></p>
+                    </div>
+                </li>
+                <li class="line"></li>
+                <li class="new">
+                    <a href="#">消息</a>
+                    <div class="new_up">
+                        <a href="#">
+                            <span>动态<small>0</small></span>
+                        </a>
+                        <a href="#">
+                            <span>评论<small>0</small></span>
+                        </a>
+                        <a href="#">
+                            <span>私信<small>0</small></span>
+                        </a>
+                        <a href="#">
+                            <span>粉丝<small>0</small></span>
+                        </a>
+                        <a href="#">
+                            <span>喜欢<small>0</small></span>
+                        </a>
+                        <a href="#">
+                            <span>通知<small>0</small></span>
+                        </a>
+                    </div>
+                </li>
+                <li class="line"></li>
+                <li class="add"><a>添加良品</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--二级导航-->
+    <div class="nav_Box">
+        <ul class="nav_list">
+            <li class="homepage"><a href="#" >首页</a></li>
+            <li class="go_Shopping">
+                <a href="../html/shangdian.html">商店</a>
+                <div class="shopping_list">
+                    <div class="Big_list" >
+                        <p class="home_Furnishing">
+                            <img src="../img/23687.png" alt="">
+                            <a href="#">家居</a>
+                        </p>
+                        <p>
+                            <img src="../img/23685.png" alt="">
+                            <a href="#">家具</a>
+                        </p>
+                        <p>
+                            <img src="../img/23686.png" alt="">
+                            <a href="#">文具</a>
+                        </p>
+                        <p>
+                            <img src="../img/23683.png" alt="">
+                            <a href="#">数码</a>
+                        </p>
+                        <p>
+                            <img src="../img/23682.png" alt="">
+                            <a href="#">玩乐</a>
+                        </p>
+                        <p>
+                            <img src="../img/23684.png" alt="">
+                            <a href="#">厨卫</a>
+                        </p>
+                        <p>
+                            <img src="../img/23680.png" alt="">
+                            <a href="#">美食</a>
+                        </p>
+                        <p class="home_Furnishing">
+                            <img src="../img/23679.png" alt="">
+                            <a href="#">男装</a>
+                        </p>
+                        <p>
+                            <img src="../img/23678.png" alt="">
+                            <a href="#">女装</a>
+                        </p>
+                        <p>
+                            <img src="../img/23677.png" alt="">
+                            <a href="#">童装</a>
+                        </p>
+                        <p>
+                            <img src="../img/23676.png" alt="">
+                            <a href="#">鞋包</a>
+                        </p>
+                        <p>
+                            <img src="../img/23675.png" alt="">
+                            <a href="#">配饰</a>
+                        </p>
+                        <p>
+                            <img src="../img/23681.png" alt="">
+                            <a href="#">美护</a>
+                        </p>
+                        <p>
+                            <img src="../img/23674.png" alt="">
+                            <a href="#">户外</a>
+                        </p>
+                        <p class="home_Furnishing">
+                            <img src="../img/23671.png" alt="">
+                            <a href="#">植物</a>
+                        </p>
+                        <p>
+                            <img src="../img/23668.png" alt="">
+                            <a href="#">图书</a>
+                        </p>
+                        <p>
+                            <img src="../img/23672.png" alt="">
+                            <a href="#">艺术</a>
+                        </p>
+                        <p>
+                            <img src="../img/23669.png" alt="">
+                            <a href="#">礼物</a>
+                        </p>
+                        <p>
+                            <img src="../img/23670.png" alt="">
+                            <a href="#">推荐</a>
+                        </p>
+
+                    </div>
+                    <div class="bottom">
+                        <a href="#">查看所有的品牌</a>
+                        <span>></span>
+                        <a href="#">最新到货</a>
+                        <span>></span>
+                    </div>
+                    <div class="new_Look">
+                        <img src="../img/315574.jpg" alt="">
+                        <p>新视线：&nbsp 2015年7月</p>
+                    </div>
+                </div>
+            </li>
+            <li class="magazine">
+                <a href="#">杂志</a>
+                <div class="magazine_list">
+                    <a href="#">趣物</a>
+                    <a href="#">数码</a>
+                    <a href="#">汽车</a>
+                    <a href="#">文化</a>
+                    <a href="#">时尚</a>
+                    <a href="#">美食</a>
+                    <a href="#">建筑</a>
+                    <a href="#">空间</a>
+                    <a href="#">圈子</a>
+                    <a href="#">清单</a>
+                    <a href="#">活动</a>
+                    <a href="#">视频</a>
+                </div>
+            </li>
+            <li class="share">
+                <a href="#">分享</a>
+                <div class="share_list">
+                    <a href="#">男士</a>
+                    <a href="#">家居</a>
+                    <a href="#">数码</a>
+                    <a href="#">工具</a>
+                    <a href="#">玩具</a>
+                    <a href="#">美容</a>
+                    <a href="#">孩子</a>
+                    <a href="#">宠物</a>
+                    <a href="#">饮食</a>
+                    <a href="#">运动</a>
+                    <a href="#">文化</a>
+                    <a href="#">女士</a>
+                </div>
+            </li>
+            <li class="expert" >
+                <a href="#">达人</a>
+                <div class="expert_list">
+
+                </div>
+            </li>
+        </ul>
+        <div class="search">
+            <input type="text" value="search...">
+            <a href="#"></a>
+        </div>
+    </div>
+</div>
+<!--主页-->
+    <div id="main">
+        <img src="../img/car_head02.jpg" alt="">
+        <div id="shopStep">
+        |
+        <span >购物车</span>
+        |
+        <span class="pay">付款</span>
+        |
+    </div>
+    <!--收获地址-->
+        <div id="shopping_car_list">
+            <p>收货地址</p>
+            <div class="shop_address">
+                <form action="../html/shopping.html">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="txt">收货人姓名</td>
+                                <td>
+                                    <input type="text" id="shop_name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="txt">省/市</td>
+                                <td>
+                                    <select name="" id="province">
+                                        <option value="">所有省份</option>
+                                        <option value="北京">北京</option>
+                                        <option value="安徽">安徽</option>
+                                        <option value="福建">福建</option>
+                                        <option value="甘肃">甘肃</option>
+                                        <option value="广东">广东</option>
+                                        <option value="广西">广西</option>
+                                        <option value="贵州">贵州</option>
+                                        <option value="海南">海南</option>
+                                        <option value="河北">河北</option>
+                                        <option value="河南">河南</option>
+                                        <option value="黑龙江">黑龙江</option>
+                                        <option value="湖北">湖北</option>
+                                        <option value="湖南">湖南</option>
+                                        <option value="吉林">吉林</option>
+                                        <option value="江苏">江苏</option>
+                                        <option value="江西">江西</option>
+                                        <option value="辽宁">辽宁</option>
+                                        <option value="内蒙古">内蒙古</option>
+                                        <option value="宁夏">宁夏</option>
+                                        <option value="青海">青海</option>
+                                        <option value="山东">山东</option>
+                                        <option value="山西">山西</option>
+                                        <option value="陕西">陕西</option>
+                                        <option value="上海">上海</option>
+                                        <option value="四川">四川</option>
+                                        <option value="天津">天津</option>
+                                        <option value="西藏">西藏</option>
+                                        <option value="新疆">新疆</option>
+                                        <option value="云南">云南</option>
+                                        <option value="浙江">浙江</option>
+                                        <option value="重庆">重庆</option>
+                                    </select>
+                                    <select name="" id="city">
+                                        <option value="">所在市区</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="txt">详细地址</td>
+                                <td>
+                                    <input type="text" id="shop_address">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="txt">手机号码</td>
+                                <td>
+                                    <input type="text" id="shop_call">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="txt"></td>
+                                <td>
+                                    <input type="button" id="btn" value="保存地址">
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

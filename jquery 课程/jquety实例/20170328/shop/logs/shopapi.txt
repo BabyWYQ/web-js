@@ -1,0 +1,91 @@
+[2017-03-20 09-31-55] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 09-32-08] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 09-35-11] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 09-40-29] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 09-41-07] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 10-09-57] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 10-15-49] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 10-15-49] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 10-15-50] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 10-15-50] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 10-15-50] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 10-15-51] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 10-15-51] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 10-15-51] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 10-15-51] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 10-15-51] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 10-15-52] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 10-15-52] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 10-15-52] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 10-15-58] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 10-15-58] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 10-15-58] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 10-15-58] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 10-15-59] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 10-15-59] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 10-15-59] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 10-16-00] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 10-16-00] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 10-16-00] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 10-16-00] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 10-16-00] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 10-16-01] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 10-16-01] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 10-16-42] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 11-17-04] http://h6.duchengjiu.top | Call to undefined method Response::body() /Users/maxwell/Sites/shop/lib/SendCloud.php line:390
+[2017-03-20 11-21-00] http://h6.duchengjiu.top | Illegal string offset 'message' /Users/maxwell/Sites/shop/api_send_email.php line:338
+[2017-03-20 11-21-02] http://h6.duchengjiu.top | Illegal string offset 'message' /Users/maxwell/Sites/shop/api_send_email.php line:338
+[2017-03-20 11-21-57] http://h6.duchengjiu.top | Illegal string offset 'message' /Users/maxwell/Sites/shop/api_send_email.php line:339
+[2017-03-20 11-22-35] http://h6.duchengjiu.top | Cannot use object of type stdClass as array /Users/maxwell/Sites/shop/api_send_email.php line:339
+[2017-03-20 11-23-04] http://h6.duchengjiu.top | Cannot use object of type stdClass as array /Users/maxwell/Sites/shop/api_send_email.php line:340
+[2017-03-20 11-24-39] http://h6.duchengjiu.top | Class 'Api' not found /Users/maxwell/Sites/shop/api_order.php line:9
+[2017-03-20 11-50-55] http://h6.duchengjiu.top | mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given /Users/maxwell/Sites/shop/api_ad.php line:25
+[2017-03-20 11-51-01] http://h6.duchengjiu.top | mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given /Users/maxwell/Sites/shop/api_ad.php line:25
+[2017-03-20 11-52-00] http://h6.duchengjiu.top | mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given /Users/maxwell/Sites/shop/api_ad.php line:26
+[2017-03-20 01-38-53] http://h6.duchengjiu.top | Undefined property: Cart::$user_id /Users/maxwell/Sites/shop/api_cart.php line:15
+[2017-03-20 01-40-01] http://h6.duchengjiu.top | Undefined property: Cart::$user_id /Users/maxwell/Sites/shop/api_cart.php line:15
+[2017-03-20 01-43-05] http://h6.duchengjiu.top | Undefined index: pic /Users/maxwell/Sites/shop/upload.php line:58
+[2017-03-20 03-04-43] http://h6.duchengjiu.top | Object of class User could not be converted to string /Users/maxwell/Sites/shop/api_userinfo.php line:55
+[2017-03-20 03-05-12] http://h6.duchengjiu.top | mysqli_stmt::bind_param(): Number of elements in type definition string doesn't match number of bind variables /Users/maxwell/Sites/shop/api_userinfo.php line:55
+[2017-03-20 03-47-21] http://h6.duchengjiu.top | mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given /Users/maxwell/Sites/shop/api_useraddress.php line:26
+[2017-03-20 03-47-56] http://h6.duchengjiu.top | mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given /Users/maxwell/Sites/shop/api_useraddress.php line:26
+[2017-03-20 03-48-49] http://h6.duchengjiu.top | mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given /Users/maxwell/Sites/shop/api_useraddress.php line:26
+[2017-03-20 03-51-41] http://h6.duchengjiu.top | Undefined variable: address /Users/maxwell/Sites/shop/api_useraddress.php line:30
+[2017-03-20 04-34-35] http://h6.duchengjiu.top | Call to undefined method UserAddress::update() /Users/maxwell/Sites/shop/api_useraddress.php line:71
+[2017-03-20 04-35-16] http://h6.duchengjiu.top | Call to undefined method UserAddress::update() /Users/maxwell/Sites/shop/api_useraddress.php line:71
+[2017-03-20 04-37-27] http://h6.duchengjiu.top | Call to undefined method UserAddress::update() /Users/maxwell/Sites/shop/api_useraddress.php line:82
+[2017-03-20 04-37-32] http://h6.duchengjiu.top | Call to undefined method UserAddress::update() /Users/maxwell/Sites/shop/api_useraddress.php line:82
+[2017-03-20 06-14-33] http://h6.duchengjiu.top | Undefined index: country /Users/maxwell/Sites/shop/api_order.php line:55
+[2017-03-20 06-15-58] http://h6.duchengjiu.top | mysqli_stmt::bind_result(): Number of bind variables doesn't match number of fields in prepared statement /Users/maxwell/Sites/shop/api_order.php line:130
+[2017-03-20 06-16-41] http://h6.duchengjiu.top | Illegal string offset 'zipcode' /Users/maxwell/Sites/shop/api_order.php line:60
+[2017-03-20 06-18-03] http://h6.duchengjiu.top | Illegal string offset 'zipcode' /Users/maxwell/Sites/shop/api_order.php line:60
+[2017-03-20 06-19-39] http://h6.duchengjiu.top | Illegal string offset 'zipcode' /Users/maxwell/Sites/shop/api_order.php line:60
+[2017-03-20 06-20-54] http://h6.duchengjiu.top | Illegal string offset 'zipcode' /Users/maxwell/Sites/shop/api_order.php line:61
+[2017-03-20 06-23-08] http://h6.duchengjiu.top | Illegal string offset 'zipcode' /Users/maxwell/Sites/shop/api_order.php line:60
+[2017-03-20 06-23-36] http://h6.duchengjiu.top | Illegal string offset 'zipcode' /Users/maxwell/Sites/shop/api_order.php line:60
+[2017-03-20 06-23-52] http://h6.duchengjiu.top | Illegal string offset 'zipcode' /Users/maxwell/Sites/shop/api_order.php line:60
+[2017-03-20 06-23-55] http://h6.duchengjiu.top | Illegal string offset 'zipcode' /Users/maxwell/Sites/shop/api_order.php line:60
+[2017-03-20 06-23-56] http://h6.duchengjiu.top | Illegal string offset 'zipcode' /Users/maxwell/Sites/shop/api_order.php line:60
+[2017-03-20 06-23-57] http://h6.duchengjiu.top | Illegal string offset 'zipcode' /Users/maxwell/Sites/shop/api_order.php line:60
+[2017-03-20 06-23-57] http://h6.duchengjiu.top | Illegal string offset 'zipcode' /Users/maxwell/Sites/shop/api_order.php line:60
+[2017-03-20 06-23-58] http://h6.duchengjiu.top | Illegal string offset 'zipcode' /Users/maxwell/Sites/shop/api_order.php line:60
+[2017-03-20 06-23-59] http://h6.duchengjiu.top | Illegal string offset 'zipcode' /Users/maxwell/Sites/shop/api_order.php line:60
+[2017-03-20 06-25-42] http://h6.duchengjiu.top | Illegal string offset 'zipcode' /Users/maxwell/Sites/shop/api_order.php line:61
+[2017-03-20 06-31-13] http://h6.duchengjiu.top | Illegal string offset 'zipcode' /Users/maxwell/Sites/shop/api_order.php line:61
+[2017-03-20 06-32-26] http://h6.duchengjiu.top | Illegal string offset 'zipcode' /Users/maxwell/Sites/shop/api_order.php line:61
+[2017-03-20 06-33-31] http://h6.duchengjiu.top | Illegal string offset 'zipcode' /Users/maxwell/Sites/shop/api_order.php line:61
+[2017-03-20 06-40-34] http://h6.duchengjiu.top | Illegal string offset 'zip_code' /Users/maxwell/Sites/shop/api_order.php line:61
+[2017-03-20 06-42-42] http://h6.duchengjiu.top | Illegal string offset 'tel' /Users/maxwell/Sites/shop/api_order.php line:61
+[2017-03-20 06-43-35] http://h6.duchengjiu.top | Undefined index: tel /Users/maxwell/Sites/shop/api_order.php line:60
+[2017-03-20 06-44-05] http://h6.duchengjiu.top | Undefined index: tel /Users/maxwell/Sites/shop/api_order.php line:61
+[2017-03-20 06-46-09] http://h6.duchengjiu.top | mysqli_stmt::bind_param(): Number of elements in type definition string doesn't match number of bind variables /Users/maxwell/Sites/shop/api_order.php line:74
+[2017-03-20 06-55-10] http://h6.duchengjiu.top | Order::add(): Property access is not allowed yet /Users/maxwell/Sites/shop/api_order.php line:83
+[2017-03-20 06-57-31] http://h6.duchengjiu.top | Order::add(): Property access is not allowed yet /Users/maxwell/Sites/shop/api_order.php line:79
+[2017-03-20 06-59-46] http://h6.duchengjiu.top | Array to string conversion /Users/maxwell/Sites/shop/api_order.php line:80
+[2017-03-20 07-00-41] http://h6.duchengjiu.top | Order::add(): Property access is not allowed yet /Users/maxwell/Sites/shop/api_order.php line:85
+[2017-03-20 07-04-55] http://h6.duchengjiu.top | Cannot modify header information - headers already sent by (output started at /Users/maxwell/Sites/shop/api_order.php:74) /Users/maxwell/Sites/shop/response.php line:65
+[2017-03-23 04-09-56] http://h6.duchengjiu.top | Array to string conversion /Users/maxwell/Sites/shop/api_goods.php line:94
+[2017-03-24 10-22-01] http://h6.duchengjiu.top | Use of undefined constant self - assumed 'self' /Users/maxwell/Sites/shop/api_cart.php line:75
+[2017-03-24 10-22-07] http://h6.duchengjiu.top | Use of undefined constant self - assumed 'self' /Users/maxwell/Sites/shop/api_cart.php line:75
+[2017-03-24 10-22-58] http://h6.duchengjiu.top | Use of undefined constant self - assumed 'self' /Users/maxwell/Sites/shop/api_cart.php line:75
+[2017-03-24 11-10-18] http://h6.duchengjiu.top | Call to undefined function apache_request_headers() /Users/maxwell/Sites/shop/api.php line:22

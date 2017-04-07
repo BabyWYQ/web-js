@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="box">
+    <img src="images/1.png" alt="">
+    <img src="images/1.png" alt="">
+    <img src="images/1.png" alt="">
+</div>
+<script>
+    var  imgs=document.getElementsByTagName("img");
+
+    var count=0;
+    for(var i=0;i<imgs.length;i++){
+        imgs[i].onload=function(){
+            count++;
+            if(count==imgs.length){
+                alert("所有图片加载完毕");
+            }
+        }
+    }
+</script>
+</body>
+</html>

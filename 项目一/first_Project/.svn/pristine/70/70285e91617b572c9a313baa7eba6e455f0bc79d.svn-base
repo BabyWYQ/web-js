@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车页</title>
+    <link rel="stylesheet" type="" href="../css/shopping.css">
+</head>
+<body>
+<!--导航头-->
+<div id="header_box">
+    <!--一级导航-->
+    <div class="header_top">
+        <div class="first_navigation">
+            <!--logo-->
+            <a href="#" class="a"></a>
+            <!--右边列表-->
+            <ul class="nav">
+                <li class="login_reg">
+                    <a href="../html/denglu.html" class="login">登录</a>
+                    <a href="../html/zhuce.html" class="reg">注册</a>
+                </li>
+                <li class="line"></li>
+                <li class="car_shopping">
+                    <a href="#">购物车</a>
+                    <div class="car_up">
+                        <div><a href="#">你的购物车暂时没有商品...</a></div>
+                        <p><a href="#">快去抢购良仓商品吧</a></p>
+                    </div>
+                </li>
+                <li class="line"></li>
+                <li class="new">
+                    <a href="#">消息</a>
+                    <div class="new_up">
+                        <a href="#">
+                            <span>动态<small>0</small></span>
+                        </a>
+                        <a href="#">
+                            <span>评论<small>0</small></span>
+                        </a>
+                        <a href="#">
+                            <span>私信<small>0</small></span>
+                        </a>
+                        <a href="#">
+                            <span>粉丝<small>0</small></span>
+                        </a>
+                        <a href="#">
+                            <span>喜欢<small>0</small></span>
+                        </a>
+                        <a href="#">
+                            <span>通知<small>0</small></span>
+                        </a>
+                    </div>
+                </li>
+                <li class="line"></li>
+                <li class="add"><a>添加良品</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--二级导航-->
+    <div class="nav_Box">
+        <ul class="nav_list">
+            <li class="homepage"><a href="#" >首页</a></li>
+            <li class="go_Shopping">
+                <a href="../html/shangdian.html">商店</a>
+                <div class="shopping_list">
+                    <div class="Big_list" >
+                        <p class="home_Furnishing">
+                            <img src="../img/23687.png" alt="">
+                            <a href="#">家居</a>
+                        </p>
+                        <p>
+                            <img src="../img/23685.png" alt="">
+                            <a href="#">家具</a>
+                        </p>
+                        <p>
+                            <img src="../img/23686.png" alt="">
+                            <a href="#">文具</a>
+                        </p>
+                        <p>
+                            <img src="../img/23683.png" alt="">
+                            <a href="#">数码</a>
+                        </p>
+                        <p>
+                            <img src="../img/23682.png" alt="">
+                            <a href="#">玩乐</a>
+                        </p>
+                        <p>
+                            <img src="../img/23684.png" alt="">
+                            <a href="#">厨卫</a>
+                        </p>
+                        <p>
+                            <img src="../img/23680.png" alt="">
+                            <a href="#">美食</a>
+                        </p>
+                        <p class="home_Furnishing">
+                            <img src="../img/23679.png" alt="">
+                            <a href="#">男装</a>
+                        </p>
+                        <p>
+                            <img src="../img/23678.png" alt="">
+                            <a href="#">女装</a>
+                        </p>
+                        <p>
+                            <img src="../img/23677.png" alt="">
+                            <a href="#">童装</a>
+                        </p>
+                        <p>
+                            <img src="../img/23676.png" alt="">
+                            <a href="#">鞋包</a>
+                        </p>
+                        <p>
+                            <img src="../img/23675.png" alt="">
+                            <a href="#">配饰</a>
+                        </p>
+                        <p>
+                            <img src="../img/23681.png" alt="">
+                            <a href="#">美护</a>
+                        </p>
+                        <p>
+                            <img src="../img/23674.png" alt="">
+                            <a href="#">户外</a>
+                        </p>
+                        <p class="home_Furnishing">
+                            <img src="../img/23671.png" alt="">
+                            <a href="#">植物</a>
+                        </p>
+                        <p>
+                            <img src="../img/23668.png" alt="">
+                            <a href="#">图书</a>
+                        </p>
+                        <p>
+                            <img src="../img/23672.png" alt="">
+                            <a href="#">艺术</a>
+                        </p>
+                        <p>
+                            <img src="../img/23669.png" alt="">
+                            <a href="#">礼物</a>
+                        </p>
+                        <p>
+                            <img src="../img/23670.png" alt="">
+                            <a href="#">推荐</a>
+                        </p>
+
+                    </div>
+                    <div class="bottom">
+                        <a href="#">查看所有的品牌</a>
+                        <span>></span>
+                        <a href="#">最新到货</a>
+                        <span>></span>
+                    </div>
+                    <div class="new_Look">
+                        <img src="../img/315574.jpg" alt="">
+                        <p>新视线：&nbsp 2015年7月</p>
+                    </div>
+                </div>
+            </li>
+            <li class="magazine">
+                <a href="#">杂志</a>
+                <div class="magazine_list">
+                    <a href="#">趣物</a>
+                    <a href="#">数码</a>
+                    <a href="#">汽车</a>
+                    <a href="#">文化</a>
+                    <a href="#">时尚</a>
+                    <a href="#">美食</a>
+                    <a href="#">建筑</a>
+                    <a href="#">空间</a>
+                    <a href="#">圈子</a>
+                    <a href="#">清单</a>
+                    <a href="#">活动</a>
+                    <a href="#">视频</a>
+                </div>
+            </li>
+            <li class="share">
+                <a href="#">分享</a>
+                <div class="share_list">
+                    <a href="#">男士</a>
+                    <a href="#">家居</a>
+                    <a href="#">数码</a>
+                    <a href="#">工具</a>
+                    <a href="#">玩具</a>
+                    <a href="#">美容</a>
+                    <a href="#">孩子</a>
+                    <a href="#">宠物</a>
+                    <a href="#">饮食</a>
+                    <a href="#">运动</a>
+                    <a href="#">文化</a>
+                    <a href="#">女士</a>
+                </div>
+            </li>
+            <li class="expert" >
+                <a href="#">达人</a>
+                <div class="expert_list">
+
+                </div>
+            </li>
+        </ul>
+        <div class="search">
+            <input type="text" value="search...">
+            <a href="#"></a>
+        </div>
+    </div>
+</div>
+<!--购物详情-->
+<div id="main">
+    <div id="shopStep">
+        |
+        <span class="car">购物车</span>
+        |
+        <span>付款</span>
+        |
+    </div>
+    <table class="shopcontab">
+        <tr class="firstline">
+            <td width="110px">全选</td>
+            <td width="300px">良品</td>
+            <td width="120px">数量</td>
+            <td width="160px">单价（元）</td>
+            <td width="160px">小计（元）</td>
+            <td>操作</td>
+        </tr>
+    </table>
+    <div class="getmoney">
+        <div class="total">
+            <span>良品总价 / </span>
+            <a href="">0.00</a>
+        </div>
+        <button>立即结算</button>
+        <div class="goindex">
+            <a href="../index.html">继续购物</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<!--=================================center-content=====================-->
+

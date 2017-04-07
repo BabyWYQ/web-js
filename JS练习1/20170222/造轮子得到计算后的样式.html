@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{padding:10px 20px 30px ;}
+    </style>
+</head>
+<body>
+<div></div>
+<script>
+    //封装一个函数 两个参数  第一个是对象，第二个是属性
+    function  fetchComputedStyle(obj,property){
+        //能力监测
+        if(window.getComputedStyle){
+            //现在要把用户输入的property中检查一次是不是驼峰
+            property=property.replace(/([A-Z])/g,function(match,$1){
+                return "-"+$1.toLowerCase();
+            })
+            return window.getComputedStyle(obj)[property];
+        }else{
+            property =property.replace(/-([a-z])/g,function(match,$1){
+                return $1.toUpperCase();
+            })
+            return  obj.currentStyle[property];
+        }
+    }
+</script>
+</body>
+</html>

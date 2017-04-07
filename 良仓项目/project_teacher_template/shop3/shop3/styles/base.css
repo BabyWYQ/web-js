@@ -1,0 +1,29 @@
+.header {
+    height: 100px;
+    background-color: #333;
+}
+.header a h2{
+    color: white;
+    font-size: 30px;
+    line-height: 100px;
+}
+.container {
+    width: 1000px;
+    margin: 10px auto;
+}
+/*商品分类*/
+.container .goods_category_container {
+
+}
+.container .goods_category {
+    height:30px;
+}
+.container .goods_category li {
+    float: left;
+    width: 70px;
+    height:30px;
+}
+.footer{
+    height: 100px;
+    background-color: #999;
+}

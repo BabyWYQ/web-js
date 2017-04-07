@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p{
+            width: 60px;
+            height: 60px;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<script src="//cdn.bootcss.com/jquery/1.12.3/jquery.js"></script>
+<script>
+    $("p").css("background-color","red");
+    $("p:first").css("background-color","green");
+    $("p:last").css("background-color","orange");
+    $("p:eq(2)").css("background-color","blue");
+    //偶数
+    $("p:even").animate({"left":600,"width":400},1000,function(){
+        alert("运动完成");
+    });
+    //奇数
+    $("p:odd").animate({"left":600,"width":400},1000,function(){
+        alert("运动完成");
+    });
+    //第三个之前
+    $("p:lt(2)").animate({"width":400},1000);
+    //第三个之后
+    $("p:gt(2)").animate({"width":400},1000);
+
+</script>
+</body>
+</html>

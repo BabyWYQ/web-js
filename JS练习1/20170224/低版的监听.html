@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 400px;
+            height: 400px;
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+<div id="box1"></div>
+<script>
+    var box1=document.getElementById("box1");
+    box1.attachEvent("onclick", function () {
+        changecolor.call(box1);
+    });
+    function  changecolor() {
+        this.style.backgroundColor="red";
+    };
+</script>
+</body>
+</html>

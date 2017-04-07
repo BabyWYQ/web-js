@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script src="js/underscore.js"></script>
+<script>
+    var templateString = "好<%= xinqing %>啊，我买了一个<%= dongxi%>, 花了<%=qian %>元钱";
+    var compile = _.template(templateString);
+
+    //字典，数据
+    var dict = {
+        "xinqing" : "高兴",
+        "dongxi" : "iphone7plus",
+        "qian" : 8000
+    }
+    console.log(compile(dict))
+</script>
+</body>
+</html>

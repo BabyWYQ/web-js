@@ -1,0 +1,16 @@
+{
+  "result" : [
+    {
+      "xuehao"  : 20170314,
+      "xingming"  : "付荣",
+      "nianling"  : 17,
+      "xingbie"  : "女"
+    },
+    {
+      "xuehao"  : 20170315,
+      "xingming"  : "邵晨",
+      "nianling"  : 19,
+      "xingbie"  : "男"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+//        function fn() {
+//            var a=1;
+//            console.log("我是一只小小鸟"+a);
+//        }
+//        fn();
+//        console.log("我是一只小小鸟"+a);
+//..................................
+        function outer(){
+            var a=1;
+            inner();
+            function inner(){
+                var b=2; //b的作用域是inner
+                console.log(a);//正常输出1
+                console.log(b);//输出b
+            }
+        }
+        outer();
+        console.log(a)//报错；a的作用域是auter；
+         function fn() {
+             a=1;
+         }
+         fn();
+        console.log(a);//输出1；
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

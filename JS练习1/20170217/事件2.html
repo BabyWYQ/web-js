@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width:400px;
+            height:400px;
+            background:red;
+        }
+    </style>
+</head>
+<body>
+<div id="box"></div>
+<script>
+    var oDiv=document.getElementById("box");
+    oDiv.onmousedown=function () {
+        this.style.background="pink";
+    }
+    oDiv.onmouseup=function () {
+        this.style.background="yellow";
+    }
+</script>
+</body>
+</html>

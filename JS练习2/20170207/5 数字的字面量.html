@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //以 0 开头 所以就是八进制；显示的时候会以十进制显示
+        console.log(036);//3*8+6=30
+        console.log(044);//4*8+4=36
+        console.log(010);//8;
+        console.log(0036);//36
+        //如果写错了,将当作10 进制
+        console.log(088);//88
+        //如果是0o开头，后面的数字错了，不转为10进制，而是直接报错
+        console.log(0o88);//报错
+        console.log(0088);//报错
+
+        //十六进制 0-9 a-f ;a 10,b11,c12,d13,e14,
+        console.log(Oxff);//15*16+15
+        console.log(Ox2b);//2*16+11
+        console.log(Ox2m);//报错  m不是十六进制的范围
+
+    //以下结果都是15
+        console.log(15);
+        console.log(Oxf);
+        console.log(O017);
+        console.log(Oo17);
+        console.log(017);
+
+        //  浮点数 （小数）
+        console.log(3.1415926);
+        console.log(.1415926);
+        console.log(5e5);//500000
+        console.log(5.6e5);//560000
+        console.log(1e-4);//0.0001
+        console.log(.1e-4);//0.00001
+
+        //无穷大
+        console.log(3e464657756856878679679967978);
+        console.log(Infinity);
+
+        //输出NaN(不是数字的数字)
+        console.log(0/0);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

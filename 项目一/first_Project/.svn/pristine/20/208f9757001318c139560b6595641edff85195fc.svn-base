@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css"  href="index.css">
+</head>
+<body>
+<!--导航头-->
+    <div id="header_box">
+         <div class="header_top">
+               <div class="first_navigation">
+                   <a href="#" class="a"></a>
+                   <ul class="nav">
+                       <li class="login_reg">
+                           <a href="tiaozhuanpag/denglu.html" class="login">登录</a>
+                           <a href="tiaozhuanpag/zhuce.html" class="reg">注册</a>
+                       </li>
+                       <li class="line"></li>
+                       <li class="car_shopping">
+                           <a href="#">购物车</a>
+                           <div class="car_up">
+                               <div><a href="#">你的购物车暂时没有商品...</a></div>
+                               <p><a href="#">快去抢购良仓商品吧</a></p>
+                           </div>
+                       </li>
+                       <li class="line"></li>
+                       <li class="new">
+                           <a href="#">消息</a>
+                           <div class="new_up">
+                               <a href="#">
+                                   <span>动态<small>0</small></span>
+                               </a>
+                               <a href="#">
+                                   <span>评论<small>0</small></span>
+                               </a>
+                               <a href="#">
+                                   <span>私信<small>0</small></span>
+                               </a>
+                               <a href="#">
+                                   <span>粉丝<small>0</small></span>
+                               </a>
+                               <a href="#">
+                                   <span>喜欢<small>0</small></span>
+                               </a>
+                               <a href="#">
+                                   <span>通知<small>0</small></span>
+                               </a>
+                           </div>
+                       </li>
+                       <li class="line"></li>
+                       <li class="add"><a>添加良品</a></li>
+                   </ul>
+               </div>
+         </div>
+    </div>
+<!--导航二-->
+</body>
+</html>

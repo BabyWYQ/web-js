@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            background-color:#c4c4c4;
+            position: absolute;
+            left: 186px;
+            top: 107px;
+            border:1px solid red;
+            opacity: 0.2;
+        }
+    </style>
+</head>
+<body>
+   <div>韩黎明</div>
+   <script>
+       oDiv=document.getElementsByTagName("div")[0];
+       var time=3000;
+       var target={"top":500,"left":500};
+       var current={"top":107,"left":186};
+       animate(oDiv,current,target,time)
+       function animate(obj,current,target,time){
+           var interval=50; //间隔量
+           var maxcount=time/interval;//执行次数
+           var count=0;//记录当前执行了多少次
+           var step={};//步长
+           for(var k in target){
+               step[k]=(target[k]-current[k])/maxcount;
+           }
+           //定时器
+           var  timer=setInterval(function(){
+               for(var k in current){
+                   current[k]+=step[k];
+                   obj.style[k]=current [k]+"px";
+               }
+                count++;
+                if(count==maxcount){
+                    clearInterval(timer);
+                }
+           },interval)
+
+
+       }
+   </script>
+</body>
+</html>

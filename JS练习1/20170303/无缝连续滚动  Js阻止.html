@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .rolling{
+            width: 800px;
+            height: 130px;
+            border:10px solid #ccc;
+            margin:100px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .rolling .m_unit{
+            width:5000px;
+            position: absolute;
+            top: 0;
+        }
+        .rolling ul{
+            list-style: none;
+        }
+        .rolling ul li{
+            float: left;
+            margin-right:10px;
+            background:url(images/loading.gif);
+        }
+    </style>
+</head>
+<body>
+<div id="rolling1" class="rolling">
+    <div id="m_unit1" class="m_unit">
+        <ul>
+            <li><a href=""><img src="images/0.png" alt=""></a></li>
+            <li><a href=""><img src="images/2.png" alt=""></a></li>
+            <li><a href=""><img src="images/3.png" alt=""></a></li>
+            <li><a href=""><img src="images/4.png" alt=""></a></li>
+            <li><a href=""><img src="images/pangzi.png" alt=""></a></li>
+        </ul>
+    </div>
+</div>
+<script src="js/rolling1.js"></script>
+
+<div id="rolling2" class="rolling">
+    <div id="m_unit2" class="m_unit">
+        <ul>
+            <li><a href=""><img src="images/0.png" alt=""></a></li>
+            <li><a href=""><img src="images/2.png" alt=""></a></li>
+            <li><a href=""><img src="images/3.png" alt=""></a></li>
+            <li><a href=""><img src="images/4.png" alt=""></a></li>
+            <li><a href=""><img src="images/pangzi.png" alt=""></a></li>
+        </ul>
+    </div>
+</div>
+<script src="js/rolling2.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+
+    /**
+     * 发出一个jsonp请求，实际上就是添加一个 script标签
+     * @param URL 请求的地址
+     * @param callbackname 回调的函数名
+     * @param callback 回调函数的定义
+     */
+    function jsonp(URL, callbackname, callback) {
+        var scriptObj = document.createElement("script");
+        document.body.appendChild(scriptObj);
+        scriptObj.src = URL;
+        //在window对象上强行增加一个属性，这个属性就是一个全局变量，是一个函数的，值是一个函数
+        window[callbackname] = callback;
+//        window['fun'] = function(data){console.log(data)}
+        document.body.removeChild(scriptObj);
+    }
+    jsonp("jsonp.ttt", "fun", function(data){
+       console.log(data);
+    });
+</script>
+</body>
+</html>

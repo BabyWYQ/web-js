@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var number=prompt("请输入网址");
+//  第一种      console.log(number.replace(number,"www.ucai.cn"));
+        var reg=/^[a-zA-Z]{0,3}\.[a-z]+\.[a-z]{2,6}$/;
+        if (reg.test(number)){
+            console.log(number .replace(number ,"www.ucai.cn"));
+        }else{
+            console.log("输入的网址不符");
+        }
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

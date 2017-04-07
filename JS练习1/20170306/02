@@ -1,0 +1,15 @@
+<?
+echo "我是王亚倩，在北京web六期学习前端科目"
+?>
+<p>
+    请选择出生年份
+    <select name="" id="">
+      <?php
+          for ($i =1930 ; $i<=2016 ; $i++){
+      ?>
+          <option><?php echo $i; ?></option>
+      <?php
+          }
+      ?>
+    <select>
+</p>

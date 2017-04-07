@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script>
+//    for (var i = 1; i <= 10; i++) {
+//      if (i == 5) {
+//        continue; // 终止当次循环，执行下一次循环
+//      }
+//      console.log(i);
+//    }
+    //寻找质数
+//    var count=0;
+    waiceng :for (var i=2;i<=100;i++){
+        for (var j=2;j<=Math.sqrt(i);j++){
+//            count++;
+            if (i%j==0){
+               continue waiceng ;
+            }
+        }
+       console.log(i);
+    }
+//    console.log(count);
+//    for (var i = 2; i < 100; i++) {
+//        var count = 0;//计数器
+//        for (var j = 1; j <= i; j++) {
+//            if (i % j == 0) {
+//                count ++; //计数器累加
+//            }
+//        }
+//        if (count == 2) {
+//            console.log(i);
+//        }
+//    }
+  </script>
+</head>
+<body>
+
+</body>
+</html>

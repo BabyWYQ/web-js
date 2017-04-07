@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script src="js/j.js"></script>
+<script>
+    var arr = [1,2,3,4];
+    j.each(arr, function(item){
+        console.log(item * 2);
+    });
+
+    function each(array, fn) {
+        for (var i = 0; i < array.length; i++) {
+            fn(array[i]);
+        }
+    }
+
+    console.log(j.now());
+
+    var obj = {"username":"max", "age":18};
+    j.map(obj, function(k,v) {
+       console.log('k = ' + k + ' v = ' + v);
+    });
+</script>
+</body>
+</html>

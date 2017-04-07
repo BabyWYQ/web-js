@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //验证手机号
+        /*
+        *11位{11}
+        * 第一位是1 ^1
+        * 第二位是【34578】
+        * 后面的都是数字 \d
+         */
+        var number=prompt("请输入手机号码");
+        var reg=/^1/;
+        var reg2=/[34578]/;
+        var reg3=/\d{9}$/;
+        console.log(/^1[34578]\d{9}$/.test(number));
+        //.................................
+        var str=prompt("请输入手机号码");
+        var reg=/^1[]34578]\d{9}$/;
+        if (reg.test(str)){
+            console.log("success");
+        }else{
+            console.log("faliure");
+        }
+        //.....................
+        var str=prompt("请输入邮箱地址");
+        var reg=/^[0-9]@[a-z]\.[a-zA-Z]$/;
+        if (reg.test(str)){
+            console.log("错错错");
+        }else{
+            console.log("对对对");
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //exec
+
+        var str="AABBCCCCCDDDDDDEEEEFFFFFFFFFFF";
+        console.log(str);
+        var reg =/(\w)\1+/g;
+         var maxl =0;
+         var maxc="";
+         var a;
+
+         while((a=reg.exec(str)) !=null){
+             if (a[0].length>maxl){
+                 maxl=a[0].length ;
+                 maxc=a[0];
+             }
+         }
+         console.log(maxc);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

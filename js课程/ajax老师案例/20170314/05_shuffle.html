@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    var arr = [1,2,3,4,5,6,7,8,9,11,12,13,14,15];
+    console.log(shuffle(arr));
+    //返回一个随机乱序的list副本
+    /**
+     * 1.从还没处理的数组中，产生一个[0,n]之间的随机数rand
+     * 2.从剩下的n个元素中把第rand个元素取出放到新数组中
+     * 3.删除原数组第rand个元素
+     * 4.重复第2，3步直到所有元素取完
+     * 5.最终返回一个新的打乱的数组
+     */
+    function shuffle(arr) {
+        var result = [],
+                rand;
+        while(arr.length > 0) {
+            rand = random(0, arr.length);
+            result.push(arr[rand]);
+            arr.splice(rand,1);
+        }
+        return result;
+    }
+
+    //5-10
+    function random(start, end) {
+        return start + parseInt(Math.random() * (end - start));
+    }
+    console.log(random(5,10));
+</script>
+</body>
+</html>

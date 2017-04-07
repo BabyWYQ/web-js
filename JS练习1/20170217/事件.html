@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width:400px;
+            height:400px;
+            background:rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+<div id="box"></div>
+<script>
+    var oDiv=document.getElementById("box");
+    //事件
+    oDiv.onclick=function () {
+        console.log("你好");
+    }
+    oDiv.onmouseover=function () {
+        this.style.background="pink";
+    }
+    oDiv.onmouseout=function () {
+        this.style.background="yellow";
+    }
+</script>
+</body>
+</html>

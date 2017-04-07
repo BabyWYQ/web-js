@@ -1,0 +1,9 @@
+作业
+1检测是否是数字，包括整数，小数
+2 检测是否是本地电话，如010-12345678,0418-12345678
+3 将用户输入的网址全部转化成我们的官网。如www.baidu.com=>www.icketang.com
+4 实现trim(str)方法，过滤字符串首位空白
+5 获取<p class='demo'>hello icketang</p>内部文案
+6 将div#demo.demo转化成<div id="demo" class="demo"></div>
+7 检测是否是2到4位汉字
+8 检测昵称是否是有汉字字母数字下划线组成，6-8位

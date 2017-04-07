@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <link rel="stylesheet" type="text/css" href="../css/denglu.css">
+</head>
+<body>
+    <div id="box">
+        <form action="" id="loginForm">
+            <table class="loginTable" >
+                <tr class="logo">
+                     <td>
+                         <a href="../index.html">
+                             <img src="../img/nlicon.png" alt="">
+                         </a>
+                     </td>
+                </tr>
+                <tr class="call_number">
+                    <td >
+                        <div>
+                            <input type="text"  placeholder="请输入手机号" id="call_number" />
+                        </div>
+                    </td>
+                </tr>
+                <tr class="verify_number">
+                    <td >
+                        <div class="auth_code">
+                            <input type="text"  placeholder="请输入验证码" id="mima"/>
+                            <div>获取验证码</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="zd_login">
+                    <td>
+                        <input type="checkbox" value="自动登录">
+                        <span>自动登录</span>
+                    </td>
+                </tr>
+                <tr class="login">
+                    <td>
+                        <input type="submit" value="登录" id="btn" >
+                    </td>
+                </tr>
+                <tr class="more">
+                    <td>
+                        <a href="#" class="a">更多登录方式 ></a>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <script>
+        window.onload = function () {
+            //表单难的语句，要写在window.onload里面
+            var LoginForm = document.getElementById("loginForm");
+            var oCall_number = document.getElementById("call_number");
+            var oMima = document.getElementById("mima");
+            var oBtn=document.getElementById("btn");
+
+            //当表单提交的时候
+            oBtn .onclick = function(){
+                var call_number = oCall_number.value;
+                var mima = oMima.value;
+                if (/^1[3578][\d]{9}$/.test(call_number)) {
+                    alert("登录成功");
+                }else{
+                    alert("手机号格式不正确");
+                }
+                j.get('api_user.php', {'status':login}, function(err,data){
+                    if (err) return;
+                    var obj = JSON.parse(data);
+                    document.getElementById("location").innerHTML = obj.areaName;
+                })
+            }
+
+        }
+    </script>
+</body>
+</html>
